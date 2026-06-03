@@ -55,3 +55,13 @@ Los estudiantes de la UTN acceden al Aula Virtual mayoritariamente desde disposi
     </td>
   </tr>
 </table>
+
+## Ausencias identificadas
+- No existe seguimiento visual del progreso en la carrera.
+- No hay integración entre el Aula Virtual y el SIU-Guaraní
+  (legajo, horarios, agenda académica).
+- La plataforma no tiene sistema de reconocimiento ni logros para el estudiante.
+
+- Estudiantes desarrollaron soluciones externas no oficiales para suplir estas ausencias:
+  - Extensiones de navegador para seguimiento de materias.
+  - Visualizador independiente: https://visualizador-materias.web.app/
