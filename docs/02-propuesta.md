@@ -3,11 +3,11 @@
 ## Núcleo — Rediseño de interfaz
 Reconstrucción mobile-first de la plataforma, priorizando la experiencia del estudiante sobre la administración institucional.
 
-- Interfaz responsive adaptada a móvil y escritorio.
-- Modo oscuro.
-- Legajo visible en el perfil del alumno.
-- Apartado de tareas próximas visible por defecto, ordenado por fecha de entrega.
-- Indicador de semana actual dentro del año académico.
+- **Interfaz responsive** adaptada a móvil y escritorio.
+- **Modo oscuro**.
+- **Legajo visible** en el perfil del alumno.
+- Apartado de **tareas próximas** visible por defecto, ordenado por fecha de entrega.
+- **Indicador de semana actual** dentro del año académico.
   Ej: "Semana 23 de 52 — faltan 3 semanas para el parcial"
 
 ## Progreso académico
