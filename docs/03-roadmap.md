@@ -1,7 +1,7 @@
 # Roadmap
 
 ## Fase 1 — Investigación y diseño
-- [ ] Definir pantallas principales a prototipar
+- [x] Definir pantallas principales a prototipar
 - [ ] Diseño en Figma — mobile first
   - [ ] Pantalla principal
   - [ ] Vista de materia
