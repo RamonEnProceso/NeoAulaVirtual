@@ -62,6 +62,14 @@ Los estudiantes de la UTN acceden al Aula Virtual mayoritariamente desde disposi
   (legajo, horarios, agenda académica).
 - La plataforma no tiene sistema de reconocimiento ni logros para el estudiante.
 
+## Evidencia Empírica
+
 - Estudiantes desarrollaron soluciones externas no oficiales para suplir estas ausencias:
-  - Extensiones de navegador para seguimiento de materias.
+  - Extensiones de navegador para seguimiento de materias: https://github.com/pablomatiasgomez/utn.ba-helper
   - Visualizador independiente: https://visualizador-materias.web.app/
+  - Portal de FMT: https://ceitfmt.ar/login
+  - Portal de iTEC: (Actualmente en desarrollo)
+
+- Docentes de la carrera desarrollaron plataformas propias ante las limitaciones del Aula Virtual oficial.
+  Ej: https://www.pdep.com.ar — sitio independiente creado por cátedras de UTN
+  Además migró la comunicación con alumnos a Discord
