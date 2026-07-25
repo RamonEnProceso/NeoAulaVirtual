@@ -1,0 +1,3625 @@
+{
+  "materia": {
+    "SyPN": {
+      "id": "SyPN",
+      "nombre": "Sistemas y Procesos de Negocio",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "AM1": {
+      "id": "AM1",
+      "nombre": "Análisis Matemático I",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "LyED": {
+      "id": "LyED",
+      "nombre": "Lógica y Estructuras Discretas",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "AyED": {
+      "id": "AyED",
+      "nombre": "Algoritmos y Estructuras de Datos",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "AdC": {
+      "id": "AdC",
+      "nombre": "Arquitectura de Computadoras",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "AGA": {
+      "id": "AGA",
+      "nombre": "Álgebra y Geometría Analítica",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "F1": {
+      "id": "F1",
+      "nombre": "Física I",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "IngSoc": {
+      "id": "IngSoc",
+      "nombre": "Ingeniería y Sociedad",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "ASI": {
+      "id": "ASI",
+      "nombre": "Análisis de Sistemas de Información",
+      "requisitos": {
+        "regularizar": [
+          "SyPN",
+          "AyED"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "AM2": {
+      "id": "AM2",
+      "nombre": "Análisis Matemático II",
+      "requisitos": {
+        "regularizar": [
+          "AM1",
+          "AGA"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "SySL": {
+      "id": "SySL",
+      "nombre": "Sintaxis y Semántica de los Lenguajes",
+      "requisitos": {
+        "regularizar": [
+          "LyED",
+          "AyED"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "PdP": {
+      "id": "PdP",
+      "nombre": "Paradigmas de Programación",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "IT1": {
+      "id": "IT1",
+      "nombre": "Inglés I",
+      "requisitos": {
+        "regularizar": [
+          "IngSoc"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "F2": {
+      "id": "F2",
+      "nombre": "Física II",
+      "requisitos": {
+        "regularizar": [
+          "AM1",
+          "F1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "SSOO": {
+      "id": "SSOO",
+      "nombre": "Sistemas Operativos",
+      "requisitos": {
+        "regularizar": [
+          "AdC"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "PyE": {
+      "id": "PyE",
+      "nombre": "Probabilidad y Estadística",
+      "requisitos": {
+        "regularizar": [
+          "AM1",
+          "AGA"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "DSI": {
+      "id": "DSI",
+      "nombre": "Diseño de Sistemas de Información",
+      "requisitos": {
+        "regularizar": [
+          "ASI",
+          "PdP"
+        ],
+        "aprobar": [
+          "IT1",
+          "AyED",
+          "SyPN"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "IT2": {
+      "id": "IT2",
+      "nombre": "Inglés II",
+      "requisitos": {
+        "regularizar": [
+          "IT1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "ECO": {
+      "id": "ECO",
+      "nombre": "Economía",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": [
+          "AM1",
+          "AGA"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "DdS": {
+      "id": "DdS",
+      "nombre": "Desarrollo de Software",
+      "requisitos": {
+        "regularizar": [
+          "PdP",
+          "ASI"
+        ],
+        "aprobar": [
+          "LyED",
+          "AyED"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "BD": {
+      "id": "BD",
+      "nombre": "Base de Datos",
+      "requisitos": {
+        "regularizar": [
+          "SySL",
+          "ASI"
+        ],
+        "aprobar": [
+          "LyED",
+          "AyED"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "SI": {
+      "id": "SI",
+      "nombre": "Seminario Integrador *",
+      "requisitos": {
+        "regularizar": [
+          "ASI"
+        ],
+        "aprobar": [
+          "SyPN",
+          "AyED",
+          "SySL",
+          "PdP"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CD": {
+      "id": "CD",
+      "nombre": "Comunicación de Datos",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": [
+          "AdC",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "RD": {
+      "id": "RD",
+      "nombre": "Redes de Datos",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "ELE": {
+      "id": "ELE",
+      "nombre": "Electivas",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "electiva"
+    },
+    "AdmSI": {
+      "id": "AdmSI",
+      "nombre": "Administración de Sistemas de Información",
+      "requisitos": {
+        "regularizar": [
+          "ECO",
+          "DSI"
+        ],
+        "aprobar": [
+          "ASI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "AN": {
+      "id": "AN",
+      "nombre": "Análisis Numérico",
+      "requisitos": {
+        "regularizar": [
+          "AM2"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "IyCS": {
+      "id": "IyCS",
+      "nombre": "Ingeniería y Calidad de Software",
+      "requisitos": {
+        "regularizar": [
+          "BD",
+          "DdS",
+          "DSI"
+        ],
+        "aprobar": [
+          "SySL",
+          "PdP"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Sim": {
+      "id": "Sim",
+      "nombre": "Simulación",
+      "requisitos": {
+        "regularizar": [
+          "PyE"
+        ],
+        "aprobar": [
+          "AM2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Leg": {
+      "id": "Leg",
+      "nombre": "Legislación",
+      "requisitos": {
+        "regularizar": [
+          "IngSoc"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "IO": {
+      "id": "IO",
+      "nombre": "Investigación Operativa",
+      "requisitos": {
+        "regularizar": [
+          "PyE",
+          "AN"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "TpA": {
+      "id": "TpA",
+      "nombre": "Tecnologías para la Automatización",
+      "requisitos": {
+        "regularizar": [
+          "F2",
+          "AN"
+        ],
+        "aprobar": [
+          "AM2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CdD": {
+      "id": "CdD",
+      "nombre": "Ciencia de Datos",
+      "requisitos": {
+        "regularizar": [
+          "Sim"
+        ],
+        "aprobar": [
+          "PyE",
+          "BD"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "PF": {
+      "id": "PF",
+      "nombre": "Proyecto Final",
+      "requisitos": {
+        "regularizar": [
+          "IyCS",
+          "AdmSI",
+          "RD"
+        ],
+        "aprobar": [
+          "IT2",
+          "DdS",
+          "DSI"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "IA": {
+      "id": "IA",
+      "nombre": "Inteligencia Artificial",
+      "requisitos": {
+        "regularizar": [
+          "Sim"
+        ],
+        "aprobar": [
+          "PyE",
+          "AN"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "GC": {
+      "id": "GC",
+      "nombre": "Gestión Gerencial",
+      "requisitos": {
+        "regularizar": [
+          "Leg",
+          "AdmSI"
+        ],
+        "aprobar": [
+          "ECO"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "SG": {
+      "id": "SG",
+      "nombre": "Sistemas de Gestión",
+      "requisitos": {
+        "regularizar": [
+          "ECO",
+          "IO"
+        ],
+        "aprobar": [
+          "DSI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "SSI": {
+      "id": "SSI",
+      "nombre": "Seguridad en los Sistemas de Información",
+      "requisitos": {
+        "regularizar": [
+          "RD",
+          "AdmSI"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "PPS": {
+      "id": "PPS",
+      "nombre": "Práctica Profesional Supervisada",
+      "requisitos": {
+        "regularizar": [
+          "IyCS",
+          "AdmSI",
+          "RD"
+        ],
+        "aprobar": [
+          "IT2",
+          "DdS",
+          "DSI"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "IC1": {
+      "id": "IC1",
+      "nombre": "Ingeniería Civil I",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "IC2": {
+      "id": "IC2",
+      "nombre": "Ingeniería Civil II",
+      "requisitos": {
+        "regularizar": [
+          "IngSoc",
+          "IC1",
+          "SSRR",
+          "FI"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "Est": {
+      "id": "Est",
+      "nombre": "Estabilidad",
+      "requisitos": {
+        "regularizar": [
+          "AGA",
+          "SSRR",
+          "FI",
+          "F1",
+          "AM1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "TM": {
+      "id": "TM",
+      "nombre": "Tecnología de los Materiales",
+      "requisitos": {
+        "regularizar": [
+          "SSRR",
+          "QG",
+          "F1",
+          "AM1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "SSRR": {
+      "id": "SSRR",
+      "nombre": "Sistemas de Representación",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "QG": {
+      "id": "QG",
+      "nombre": "Química General",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "FI": {
+      "id": "FI",
+      "nombre": "Fundamentos de Informática",
+      "requisitos": {
+        "regularizar": [
+          "AM2"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "TC": {
+      "id": "TC",
+      "nombre": "Tecnología de la Construcción",
+      "requisitos": {
+        "regularizar": [
+          "Est",
+          "IC2",
+          "TM",
+          "IT1"
+        ],
+        "aprobar": [
+          "IC1",
+          "SSRR",
+          "AM1",
+          "AGA",
+          "F1",
+          "QG",
+          "FI"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "RM": {
+      "id": "RM",
+      "nombre": "Resistencia de Materiales",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "DAPU": {
+      "id": "DAPU",
+      "nombre": "Diseño Arquitectónico, Planeamiento y Urbanismo",
+      "requisitos": {
+        "regularizar": [
+          "TC",
+          "Ggrafía",
+          "IEA",
+          "ITme",
+          "Eco",
+          "IT2"
+        ],
+        "aprobar": [
+          "Est",
+          "IC2",
+          "IT1",
+          "TM"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CA": {
+      "id": "CA",
+      "nombre": "Cálculo Avanzado",
+      "requisitos": {
+        "regularizar": [
+          "Est"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA",
+          "F1",
+          "FI"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "TH": {
+      "id": "TH",
+      "nombre": "Tecnología del Hormigón",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "Est",
+          "TM",
+          "PyE"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA",
+          "SSRR",
+          "F1",
+          "FI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Gtecnia": {
+      "id": "Gtecnia",
+      "nombre": "Geotecnia",
+      "requisitos": {
+        "regularizar": [
+          "TM",
+          "PyE",
+          "IT1"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA",
+          "QG",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Ggrafía": {
+      "id": "Ggrafía",
+      "nombre": "Geotopografía",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "IC2",
+          "PyE",
+          "F2"
+        ],
+        "aprobar": [
+          "IC1",
+          "QG",
+          "SSRR",
+          "AM1",
+          "AGA",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "HGA": {
+      "id": "HGA",
+      "nombre": "Hidráulica General y Aplicada",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "Est",
+          "IC2",
+          "PyE",
+          "F2"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1",
+          "SSRR",
+          "FI",
+          "AGA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "ITme": {
+      "id": "ITme",
+      "nombre": "Instalaciones Termomecánicas",
+      "requisitos": {
+        "regularizar": [
+          "IC2",
+          "TM",
+          "F2"
+        ],
+        "aprobar": [
+          "AGA",
+          "SSRR",
+          "IC1",
+          "QG",
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "IEA": {
+      "id": "IEA",
+      "nombre": "Instalaciones Eléctricas Acústicas",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": [
+          "AGA",
+          "SSRR",
+          "IC1",
+          "QG",
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "IL": {
+      "id": "IL",
+      "nombre": "Ingeniería Legal",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "IC2",
+          "PyE",
+          "IT1"
+        ],
+        "aprobar": [
+          "AGA",
+          "IngSoc",
+          "IC1",
+          "FI",
+          "AM1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "ISG": {
+      "id": "ISG",
+      "nombre": "Instalaciones Sanitarias y de Gas",
+      "requisitos": {
+        "regularizar": [
+          "TC",
+          "Ggrafía",
+          "HGA",
+          "ECO"
+        ],
+        "aprobar": [
+          "SSRR",
+          "QG",
+          "F1",
+          "FI",
+          "TM"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "AE1": {
+      "id": "AE1",
+      "nombre": "Análisis Estructural I",
+      "requisitos": {
+        "regularizar": [
+          "RM",
+          "TH"
+        ],
+        "aprobar": [
+          "AM2",
+          "Est",
+          "IC2",
+          "PyE"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "EH": {
+      "id": "EH",
+      "nombre": "Estructuras de Hormigón",
+      "requisitos": {
+        "regularizar": [
+          "RM",
+          "TH",
+          "TC",
+          "Ggrafía",
+          "IT2"
+        ],
+        "aprobar": [
+          "AM2",
+          "Est",
+          "IC2",
+          "TM",
+          "F2",
+          "PyE"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "HOH": {
+      "id": "HOH",
+      "nombre": "Hidrología y Obras Hidráulicas",
+      "requisitos": {
+        "regularizar": [
+          "RM",
+          "TC",
+          "Ggrafía",
+          "HGA",
+          "Eco",
+          "IT2"
+        ],
+        "aprobar": [
+          "AM2",
+          "Est",
+          "IC2",
+          "TM",
+          "F2",
+          "PyE"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "VC1": {
+      "id": "VC1",
+      "nombre": "Vías de Comunicación I",
+      "requisitos": {
+        "regularizar": [
+          "IC2",
+          "PyE",
+          "IT1"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA",
+          "IngSoc",
+          "IC1",
+          "FI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "OCO": {
+      "id": "OCO",
+      "nombre": "Organización y Conducción de Obras",
+      "requisitos": {
+        "regularizar": [
+          "Gtecnia",
+          "ISG",
+          "DAPU",
+          "EH",
+          "HOH"
+        ],
+        "aprobar": [
+          "TH",
+          "TC",
+          "Ggrafía",
+          "HGA",
+          "IEA",
+          "ITme",
+          "Eco",
+          "IT2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CMM": {
+      "id": "CMM",
+      "nombre": "Construcciones Metálicas y de Madera",
+      "requisitos": {
+        "regularizar": [
+          "CA",
+          "AE1"
+        ],
+        "aprobar": [
+          "RM",
+          "TH",
+          "TC",
+          "Ggrafía"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Cim": {
+      "id": "Cim",
+      "nombre": "Cimentaciones",
+      "requisitos": {
+        "regularizar": [
+          "CA",
+          "Gtecnia",
+          "AE1",
+          "EH",
+          "HOH"
+        ],
+        "aprobar": [
+          "RM",
+          "TH",
+          "TC",
+          "Ggrafía",
+          "HGA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "IS": {
+      "id": "IS",
+      "nombre": "Ingeniería Sanitaria",
+      "requisitos": {
+        "regularizar": [
+          "Gtecnia",
+          "ISG",
+          "HOH"
+        ],
+        "aprobar": [
+          "TH",
+          "TC",
+          "Ggrafía",
+          "HGA",
+          "IT2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "AE2": {
+      "id": "AE2",
+      "nombre": "Análisis Estructural II",
+      "requisitos": {
+        "regularizar": [
+          "CA",
+          "Gtecnia",
+          "AE1",
+          "EH",
+          "HOH"
+        ],
+        "aprobar": [
+          "RM",
+          "TH",
+          "TC",
+          "Ggrafía",
+          "IT2"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "VC2": {
+      "id": "VC2",
+      "nombre": "Vías de Comunicación II",
+      "requisitos": {
+        "regularizar": [
+          "Gtecnia",
+          "EH",
+          "HOH",
+          "IL",
+          "VC1"
+        ],
+        "aprobar": [
+          "RM",
+          "TH",
+          "TC",
+          "Ggrafía",
+          "HGA",
+          "Eco"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "GADS": {
+      "id": "GADS",
+      "nombre": "Gestión Ambiental y Desarrollo Sustentable",
+      "requisitos": {
+        "regularizar": [
+          "Gtecnia",
+          "DAPU",
+          "HOH",
+          "IL"
+        ],
+        "aprobar": [
+          "HGA",
+          "Eco",
+          "IT2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Int1": {
+      "id": "Int1",
+      "nombre": "Integración Eléctrica I",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "Int2": {
+      "id": "Int2",
+      "nombre": "Integración Eléctrica II",
+      "requisitos": {
+        "regularizar": [
+          "AM1",
+          "F1",
+          "Int1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "Etecnia1": {
+      "id": "Etecnia1",
+      "nombre": "Electrotecnia I",
+      "requisitos": {
+        "regularizar": [
+          "AGA",
+          "F1",
+          "AM1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "CN": {
+      "id": "CN",
+      "nombre": "Cálculo Numérico",
+      "requisitos": {
+        "regularizar": [
+          "AM1",
+          "AGA",
+          "F1",
+          "FI"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "ME1": {
+      "id": "ME1",
+      "nombre": "Máquinas Eléctricas I",
+      "requisitos": {
+        "regularizar": [
+          "F2",
+          "Etecnia1",
+          "AM2",
+          "CN"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "F3": {
+      "id": "F3",
+      "nombre": "Física III",
+      "requisitos": {
+        "regularizar": [
+          "F2",
+          "AM2"
+        ],
+        "aprobar": [
+          "AGA",
+          "F1",
+          "AM1"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "Termo": {
+      "id": "Termo",
+      "nombre": "Termodinámica",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "F2"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1",
+          "AGA"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "TEME": {
+      "id": "TEME",
+      "nombre": "Tecnología y Ensayos de Materiales Eléctricos",
+      "requisitos": {
+        "regularizar": [
+          "QG",
+          "F2"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Etecnia2": {
+      "id": "Etecnia2",
+      "nombre": "Electrotecnia II",
+      "requisitos": {
+        "regularizar": [
+          "F2",
+          "Etecnia1",
+          "AM2"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "IME": {
+      "id": "IME",
+      "nombre": "Instrumentos y Mediciones Eléctricas",
+      "requisitos": {
+        "regularizar": [
+          "PyE",
+          "Etecnia"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "FAS": {
+      "id": "FAS",
+      "nombre": "Fundamentos para Análisis de Señales",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "CN"
+        ],
+        "aprobar": [
+          "AGA",
+          "AM1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "TI": {
+      "id": "TI",
+      "nombre": "Taller Interdisciplinario",
+      "requisitos": {
+        "regularizar": [
+          "F2",
+          "Etecnia1",
+          "AM2",
+          "CN"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "IEL": {
+      "id": "IEL",
+      "nombre": "Instalaciones Eléctricas y Luminotecnia",
+      "requisitos": {
+        "regularizar": [
+          "TEME",
+          "ME1",
+          "Etecnia2"
+        ],
+        "aprobar": [
+          "QG",
+          "F2",
+          "Etecnia1",
+          "Int2",
+          "AM2",
+          "IT1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "ME2": {
+      "id": "ME2",
+      "nombre": "Máquinas Eléctricas II",
+      "requisitos": {
+        "regularizar": [
+          "TEME",
+          "IME",
+          "TC",
+          "ME1",
+          "Etecnia2"
+        ],
+        "aprobar": [
+          "QG",
+          "F2",
+          "PyE",
+          "Etecnia1",
+          "IT2",
+          "AM2"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "SREMA": {
+      "id": "SREMA",
+      "nombre": "Seguridad, Riesgo Eléctrico y Medio Ambiente",
+      "requisitos": {
+        "regularizar": [
+          "QG",
+          "Etecnia1",
+          "TEME",
+          "TC"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA",
+          "F1",
+          "F2",
+          "AM2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "E1": {
+      "id": "E1",
+      "nombre": "Electrónica I",
+      "requisitos": {
+        "regularizar": [
+          "Etecnia1"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "MTHF": {
+      "id": "MTHF",
+      "nombre": "Máquinas Térmicas, Hidráulicas y de Fluidos",
+      "requisitos": {
+        "regularizar": [
+          "Est",
+          "MT",
+          "Termo"
+        ],
+        "aprobar": [
+          "F2",
+          "AM2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "GTDEE": {
+      "id": "GTDEE",
+      "nombre": "Generación, Transmisión y Distribución de la Energía Eléctrica",
+      "requisitos": {
+        "regularizar": [
+          "F3",
+          "ME2",
+          "MTHF"
+        ],
+        "aprobar": [
+          "Est",
+          "MT",
+          "ME1",
+          "TEME",
+          "Etecnia2",
+          "Termo"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "SP": {
+      "id": "SP",
+      "nombre": "Sistemas de Potencia",
+      "requisitos": {
+        "regularizar": [
+          "ME2",
+          "CA"
+        ],
+        "aprobar": [
+          "TEME",
+          "ME1",
+          "Etecnia2",
+          "TI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "ACE": {
+      "id": "ACE",
+      "nombre": "Accionamiento y Controles Eléctricos",
+      "requisitos": {
+        "regularizar": [
+          "E1",
+          "CA",
+          "ME2"
+        ],
+        "aprobar": [
+          "Etecnia1",
+          "TEME",
+          "ME",
+          "Etecnia2",
+          "FAS",
+          "y"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "OAE": {
+      "id": "OAE",
+      "nombre": "Organización y Administración de las Empresas",
+      "requisitos": {
+        "regularizar": [
+          "Leg",
+          "ECO"
+        ],
+        "aprobar": [
+          "TI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "E2": {
+      "id": "E2",
+      "nombre": "Electrónica II",
+      "requisitos": {
+        "regularizar": [
+          "Etecnia2",
+          "E1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "Info1": {
+      "id": "Info1",
+      "nombre": "Informática I",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "DAC": {
+      "id": "DAC",
+      "nombre": "Diseño Asistido por Computadora",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "Info2": {
+      "id": "Info2",
+      "nombre": "Informática II",
+      "requisitos": {
+        "regularizar": [
+          "Info1",
+          "AGA",
+          "AM1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "FE": {
+      "id": "FE",
+      "nombre": "Física Electrónica",
+      "requisitos": {
+        "regularizar": [
+          "F2"
+        ],
+        "aprobar": [
+          "AGA",
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "ASyS": {
+      "id": "ASyS",
+      "nombre": "Análisis de Señales y Sistemas",
+      "requisitos": {
+        "regularizar": [
+          "AM2"
+        ],
+        "aprobar": [
+          "AGA",
+          "AM1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "TdC1": {
+      "id": "TdC1",
+      "nombre": "Teoría de los Circuitos I",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "F2"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "TD1": {
+      "id": "TD1",
+      "nombre": "Técnicas Digitales I",
+      "requisitos": {
+        "regularizar": [
+          "Info1"
+        ],
+        "aprobar": [
+          "AGA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "MdE": {
+      "id": "MdE",
+      "nombre": "Medios de Enlace",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "F2"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1",
+          "AGA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "DE": {
+      "id": "DE",
+      "nombre": "Dispositivos Electrónicos",
+      "requisitos": {
+        "regularizar": [
+          "Info",
+          "AM1",
+          "QG"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "EA1": {
+      "id": "EA1",
+      "nombre": "Electrónica Aplicada I",
+      "requisitos": {
+        "regularizar": [
+          "QG",
+          "F2"
+        ],
+        "aprobar": [
+          "Info",
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "EA2": {
+      "id": "EA2",
+      "nombre": "Electrónica Aplicada II",
+      "requisitos": {
+        "regularizar": [
+          "ASyS",
+          "FE",
+          "TdC1",
+          "DE",
+          "EA1"
+        ],
+        "aprobar": [
+          "AM2",
+          "F2",
+          "IT1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "TdC2": {
+      "id": "TdC2",
+      "nombre": "Teoría de los Circuitos II",
+      "requisitos": {
+        "regularizar": [
+          "ASyS",
+          "TdC1"
+        ],
+        "aprobar": [
+          "AM2",
+          "F2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "MIE": {
+      "id": "MIE",
+      "nombre": "Máquinas e Instalaciones Eléctricas",
+      "requisitos": {
+        "regularizar": [
+          "ASyS",
+          "TdC1"
+        ],
+        "aprobar": [
+          "AM2",
+          "F2"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "TD2": {
+      "id": "TD2",
+      "nombre": "Técnicas Digitales II",
+      "requisitos": {
+        "regularizar": [
+          "Info2",
+          "TD1",
+          "EA1"
+        ],
+        "aprobar": [
+          "QG",
+          "F2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "SdC": {
+      "id": "SdC",
+      "nombre": "Sistema de Comunicaciones",
+      "requisitos": {
+        "regularizar": [
+          "ASyS",
+          "PyE",
+          "EA1",
+          "MdE"
+        ],
+        "aprobar": [
+          "AM2",
+          "F2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "SHMA": {
+      "id": "SHMA",
+      "nombre": "Seguridad, Higiene y Medio Ambiente",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": [
+          "IngSoc",
+          "QG"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "EA3": {
+      "id": "EA3",
+      "nombre": "Electrónica Aplicada III",
+      "requisitos": {
+        "regularizar": [
+          "TdC2",
+          "SdC",
+          "EA2"
+        ],
+        "aprobar": [
+          "FE",
+          "TdC1",
+          "EA1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "TD3": {
+      "id": "TD3",
+      "nombre": "Técnicas Digitales III",
+      "requisitos": {
+        "regularizar": [
+          "TD2"
+        ],
+        "aprobar": [
+          "Info2",
+          "TD1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "SC": {
+      "id": "SC",
+      "nombre": "Sistemas de Control",
+      "requisitos": {
+        "regularizar": [
+          "MIE",
+          "TdC2"
+        ],
+        "aprobar": [
+          "TdC1",
+          "FE"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "EdP": {
+      "id": "EdP",
+      "nombre": "Electrónica de Potencia",
+      "requisitos": {
+        "regularizar": [
+          "MIE",
+          "ME1",
+          "EA2"
+        ],
+        "aprobar": [
+          "FE",
+          "TD1",
+          "EA1"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "TE": {
+      "id": "TE",
+      "nombre": "Tecnología Electrónica",
+      "requisitos": {
+        "regularizar": [
+          "ME1"
+        ],
+        "aprobar": [
+          "FE",
+          "TD1",
+          "EA1"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "OI": {
+      "id": "OI",
+      "nombre": "Organización Industrial",
+      "requisitos": {
+        "regularizar": [
+          "Leg"
+        ],
+        "aprobar": []
+      },
+      "tipo": "homogénea"
+    },
+    "PS": {
+      "id": "PS",
+      "nombre": "Pensamiento Sistémico",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "AMI": {
+      "id": "AMI",
+      "nombre": "Análisis Matemático I",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "AdmGen": {
+      "id": "AdmGen",
+      "nombre": "Administración General",
+      "requisitos": {
+        "regularizar": [
+          "Info1",
+          "PS",
+          "IngSoc",
+          "AGA"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "EcoG": {
+      "id": "EcoG",
+      "nombre": "Economía General",
+      "requisitos": {
+        "regularizar": [
+          "AM1",
+          "PS",
+          "IngSoc"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "CdM": {
+      "id": "CdM",
+      "nombre": "Ciencia de los Materiales",
+      "requisitos": {
+        "regularizar": [
+          "QG",
+          "F1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "EdT": {
+      "id": "EdT",
+      "nombre": "Estudio del Trabajo",
+      "requisitos": {
+        "regularizar": [
+          "AdmGen",
+          "PyE"
+        ],
+        "aprobar": [
+          "AM1",
+          "SSRR",
+          "Info1",
+          "PS",
+          "AGA",
+          "IngSoc"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "TMT": {
+      "id": "TMT",
+      "nombre": "Termodinámica y Máquinas Térmicas",
+      "requisitos": {
+        "regularizar": [
+          "QG",
+          "F2"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "EME": {
+      "id": "EME",
+      "nombre": "Electrotecnia y Máquinas Eléctricas",
+      "requisitos": {
+        "regularizar": [
+          "F2"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "ERM": {
+      "id": "ERM",
+      "nombre": "Estática y Resistencia de Materiales",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "CdM"
+        ],
+        "aprobar": [
+          "AM1",
+          "QG",
+          "F1",
+          "AGA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CyP": {
+      "id": "CyP",
+      "nombre": "Costos y Presupuestos",
+      "requisitos": {
+        "regularizar": [
+          "AdmGen",
+          "EcoG"
+        ],
+        "aprobar": [
+          "AM1",
+          "Info1",
+          "PS",
+          "AGA",
+          "IngSoc"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "ANCA": {
+      "id": "ANCA",
+      "nombre": "Análisis Numérico y Cálculo Avanzado",
+      "requisitos": {
+        "regularizar": [
+          "AM2"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "EdE": {
+      "id": "EdE",
+      "nombre": "Economía de la Empresa",
+      "requisitos": {
+        "regularizar": [
+          "AdmGen",
+          "EcoG"
+        ],
+        "aprobar": [
+          "AM1",
+          "Info1",
+          "PS",
+          "AGA",
+          "IngSoc"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Com": {
+      "id": "Com",
+      "nombre": "Comercialización",
+      "requisitos": {
+        "regularizar": [
+          "AdmGen",
+          "PyE",
+          "EcoG"
+        ],
+        "aprobar": [
+          "AM1",
+          "Info1",
+          "PS",
+          "AGA",
+          "IngSoc"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "InsInd": {
+      "id": "InsInd",
+      "nombre": "Instalaciones Industriales",
+      "requisitos": {
+        "regularizar": [
+          "TMT",
+          "ERM",
+          "MdF",
+          "EME"
+        ],
+        "aprobar": [
+          "AM2",
+          "QG",
+          "CdM",
+          "F2"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "PCP": {
+      "id": "PCP",
+      "nombre": "Planificación y Control de la Producción",
+      "requisitos": {
+        "regularizar": [
+          "EdT"
+        ],
+        "aprobar": [
+          "AdmGen",
+          "PyE"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "SHIA": {
+      "id": "SHIA",
+      "nombre": "Seguridad, Higiene e Ingeniería Ambiental",
+      "requisitos": {
+        "regularizar": [
+          "EdT"
+        ],
+        "aprobar": [
+          "AdmGen",
+          "PyE"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "IeC": {
+      "id": "IeC",
+      "nombre": "Ingeniería en Calidad",
+      "requisitos": {
+        "regularizar": [
+          "EdT"
+        ],
+        "aprobar": [
+          "AdmGen",
+          "PyE"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "PPII": {
+      "id": "PPII",
+      "nombre": "Procesos Industriales",
+      "requisitos": {
+        "regularizar": [
+          "EdT",
+          "TMT",
+          "EME"
+        ],
+        "aprobar": [
+          "QG",
+          "AdmGen",
+          "CdM",
+          "F2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Mant": {
+      "id": "Mant",
+      "nombre": "Mantenimiento",
+      "requisitos": {
+        "regularizar": [
+          "InsInd"
+        ],
+        "aprobar": [
+          "TMT",
+          "ERM",
+          "EME"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CE": {
+      "id": "CE",
+      "nombre": "Comercio Exterior",
+      "requisitos": {
+        "regularizar": [
+          "EdP"
+        ],
+        "aprobar": [
+          "EdT",
+          "Com",
+          "EdE"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CdG": {
+      "id": "CdG",
+      "nombre": "Control de Gestión",
+      "requisitos": {
+        "regularizar": [
+          "CyP",
+          "EdE"
+        ],
+        "aprobar": [
+          "AdmGen",
+          "EcoG"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "MMDP": {
+      "id": "MMDP",
+      "nombre": "Manejo de Materiales y Distribución de Plantas",
+      "requisitos": {
+        "regularizar": [
+          "EdT",
+          "MyM"
+        ],
+        "aprobar": [
+          "AM2",
+          "AdmGen",
+          "ERM"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "DP": {
+      "id": "DP",
+      "nombre": "Diseño de Producto",
+      "requisitos": {
+        "regularizar": [
+          "Info2",
+          "Com"
+        ],
+        "aprobar": [
+          "SSRR",
+          "Info1",
+          "AdmGen",
+          "PyE",
+          "EcoG"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "RRII": {
+      "id": "RRII",
+      "nombre": "Relaciones Industriales",
+      "requisitos": {
+        "regularizar": [
+          "EdT"
+        ],
+        "aprobar": [
+          "AdmGen",
+          "PyE"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "IM1": {
+      "id": "IM1",
+      "nombre": "Ingeniería Mecánica I",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "IM2": {
+      "id": "IM2",
+      "nombre": "Ingeniería Mecánica II",
+      "requisitos": {
+        "regularizar": [
+          "F1",
+          "IM1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "IASI": {
+      "id": "IASI",
+      "nombre": "Ingeniería Ambiental y Seguridad Industrial",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "MM": {
+      "id": "MM",
+      "nombre": "Materiales Metálicos",
+      "requisitos": {
+        "regularizar": [
+          "QG",
+          "F1"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "MNM": {
+      "id": "MNM",
+      "nombre": "Materiales No Metálicos",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "IM3": {
+      "id": "IM3",
+      "nombre": "Ingeniería Mecánica III",
+      "requisitos": {
+        "regularizar": [
+          "MNM",
+          "MM",
+          "IM2"
+        ],
+        "aprobar": [
+          "AM1",
+          "QG",
+          "F1",
+          "IM1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "DM": {
+      "id": "DM",
+      "nombre": "Diseño Mecánico",
+      "requisitos": {
+        "regularizar": [
+          "MNM",
+          "E1",
+          "MM"
+        ],
+        "aprobar": [
+          "F1",
+          "IM1",
+          "SSRR",
+          "FI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "MyE": {
+      "id": "MyE",
+      "nombre": "Mediciones y Ensayos",
+      "requisitos": {
+        "regularizar": [
+          "E1",
+          "MM",
+          "F2"
+        ],
+        "aprobar": [
+          "AM1",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "EM": {
+      "id": "EM",
+      "nombre": "Elementos de Máquinas",
+      "requisitos": {
+        "regularizar": [
+          "MNM",
+          "MM",
+          "MR",
+          "E2",
+          "IM3"
+        ],
+        "aprobar": [
+          "QG",
+          "E1",
+          "AM2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "ESC": {
+      "id": "ESC",
+      "nombre": "Electrónica y Sistemas de Control",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "F2",
+          "CA"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA",
+          "F1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "MIC": {
+      "id": "MIC",
+      "nombre": "Metrología e Ingeniería de Calidad",
+      "requisitos": {
+        "regularizar": [
+          "MyE",
+          "PyE"
+        ],
+        "aprobar": [
+          "AGA",
+          "MM",
+          "F2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "E3": {
+      "id": "E3",
+      "nombre": "Estabilidad III",
+      "requisitos": {
+        "regularizar": [
+          "E2"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA",
+          "E1",
+          "FI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "MANT": {
+      "id": "MANT",
+      "nombre": "Mantenimiento",
+      "requisitos": {
+        "regularizar": [
+          "MyE",
+          "ECO",
+          "EM"
+        ],
+        "aprobar": [
+          "MM",
+          "F2",
+          "MR",
+          "E2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "MAT": {
+      "id": "MAT",
+      "nombre": "Turbomáquinas",
+      "requisitos": {
+        "regularizar": [
+          "TC"
+        ],
+        "aprobar": [
+          "F2",
+          "Termo"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "TdF": {
+      "id": "TdF",
+      "nombre": "Tecnología de Fabricación",
+      "requisitos": {
+        "regularizar": [
+          "EM",
+          "MIC"
+        ],
+        "aprobar": [
+          "MNM",
+          "E1",
+          "MM",
+          "DM"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "IIN": {
+      "id": "IIN",
+      "nombre": "Introducción a la Ingeniería Naval",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "InglésI": {
+      "id": "InglésI",
+      "nombre": "Inglés I",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "DN": {
+      "id": "DN",
+      "nombre": "Dibujo Naval",
+      "requisitos": {
+        "regularizar": [
+          "IIN",
+          "SSRR"
+        ],
+        "aprobar": [
+          "IIN",
+          "SSRR"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "TB1": {
+      "id": "TB1",
+      "nombre": "Teoría del Buque I",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "TB2": {
+      "id": "TB2",
+      "nombre": "Teoría del Buque II",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "PyE",
+          "DN"
+        ],
+        "aprobar": [
+          "AM2",
+          "PyE",
+          "DN"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Term": {
+      "id": "Term",
+      "nombre": "Termodinámica",
+      "requisitos": {
+        "regularizar": [
+          "IT1",
+          "TB1",
+          "MAI",
+          "MdF"
+        ],
+        "aprobar": [
+          "IT1",
+          "TB1",
+          "MAI",
+          "MdF"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "AB": {
+      "id": "AB",
+      "nombre": "Alistamiento de Buques",
+      "requisitos": {
+        "regularizar": [
+          "AM2",
+          "F2"
+        ],
+        "aprobar": [
+          "AM2",
+          "F2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "MAI": {
+      "id": "MAI",
+      "nombre": "Matemática Aplicada a la Ingeniería",
+      "requisitos": {
+        "regularizar": [
+          "AM2"
+        ],
+        "aprobar": [
+          "AM2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "AE3": {
+      "id": "AE3",
+      "nombre": "Análisis Estructural III",
+      "requisitos": {
+        "regularizar": [
+          "AE2",
+          "MAI"
+        ],
+        "aprobar": [
+          "AE2",
+          "MAI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "MN": {
+      "id": "MN",
+      "nombre": "Materiales Navales",
+      "requisitos": {
+        "regularizar": [
+          "F1",
+          "AM2"
+        ],
+        "aprobar": [
+          "F1",
+          "AM2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Inglés2": {
+      "id": "Inglés2",
+      "nombre": "Inglés II",
+      "requisitos": {
+        "regularizar": [
+          "Inglés1"
+        ],
+        "aprobar": [
+          "Inglés1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "PB": {
+      "id": "PB",
+      "nombre": "Proyecto de Buques",
+      "requisitos": {
+        "regularizar": [
+          "TB2",
+          "AB",
+          "CN",
+          "IT2"
+        ],
+        "aprobar": [
+          "TB2",
+          "AB",
+          "CN",
+          "IT2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "PEN": {
+      "id": "PEN",
+      "nombre": "Plantas Eléctricas Navales",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": [
+          "EME"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "PPN": {
+      "id": "PPN",
+      "nombre": "Plantas Propulsoras Navales",
+      "requisitos": {
+        "regularizar": [
+          "AB",
+          "MAT"
+        ],
+        "aprobar": [
+          "AB",
+          "MAT"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CEB": {
+      "id": "CEB",
+      "nombre": "Cálculo de Estructuras de Buques",
+      "requisitos": {
+        "regularizar": [
+          "AE3",
+          "MN",
+          "CN"
+        ],
+        "aprobar": [
+          "AE3",
+          "MN",
+          "CN"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Sold": {
+      "id": "Sold",
+      "nombre": "Soldadura",
+      "requisitos": {
+        "regularizar": [
+          "MN"
+        ],
+        "aprobar": [
+          "MN"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "AEF": {
+      "id": "AEF",
+      "nombre": "Análisis por Elementos Finitos",
+      "requisitos": {
+        "regularizar": [
+          "AE3"
+        ],
+        "aprobar": [
+          "AE3"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "EV": {
+      "id": "EV",
+      "nombre": "Embarcaciones Veloces",
+      "requisitos": {
+        "regularizar": [
+          "PB"
+        ],
+        "aprobar": [
+          "PB"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "PA": {
+      "id": "PA",
+      "nombre": "Procedimientos de Astilleros",
+      "requisitos": {
+        "regularizar": [
+          "CN",
+          "PB",
+          "OI"
+        ],
+        "aprobar": [
+          "CN",
+          "PB",
+          "OI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "IIQ": {
+      "id": "IIQ",
+      "nombre": "Introducción a la Ingeniería Química",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "Q": {
+      "id": "Q",
+      "nombre": "Química",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "IEP": {
+      "id": "IEP",
+      "nombre": "Introducción a Equipos y Procesos",
+      "requisitos": {
+        "regularizar": [
+          "IIQ",
+          "Q"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "QO": {
+      "id": "QO",
+      "nombre": "Química Orgánica",
+      "requisitos": {
+        "regularizar": [
+          "Q"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "QI": {
+      "id": "QI",
+      "nombre": "Química Inorgánica",
+      "requisitos": {
+        "regularizar": [
+          "Q"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "BME": {
+      "id": "BME",
+      "nombre": "Balances de Masa y Energía",
+      "requisitos": {
+        "regularizar": [
+          "Q",
+          "SSRR",
+          "FI",
+          "IEP",
+          "F2"
+        ],
+        "aprobar": [
+          "IIQ",
+          "AGA",
+          "AM1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "QAp": {
+      "id": "QAp",
+      "nombre": "Química Aplicada",
+      "requisitos": {
+        "regularizar": [
+          "IEP",
+          "QI",
+          "F2",
+          "QO"
+        ],
+        "aprobar": [
+          "IIQ",
+          "IngSoc",
+          "Q",
+          "IT1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CM": {
+      "id": "CM",
+      "nombre": "Ciencia de los Materiales",
+      "requisitos": {
+        "regularizar": [
+          "IEP",
+          "QI",
+          "QO"
+        ],
+        "aprobar": [
+          "IIQ",
+          "Q"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "QA": {
+      "id": "QA",
+      "nombre": "Química Analítica",
+      "requisitos": {
+        "regularizar": [
+          "PyE",
+          "QI",
+          "QO"
+        ],
+        "aprobar": [
+          "IngSoc",
+          "Q"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "MQB": {
+      "id": "MQB",
+      "nombre": "Microbiología y Química Biológica",
+      "requisitos": {
+        "regularizar": [
+          "QI",
+          "QO"
+        ],
+        "aprobar": [
+          "Q"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "FT": {
+      "id": "FT",
+      "nombre": "Fenómenos de Transporte",
+      "requisitos": {
+        "regularizar": [
+          "IEP",
+          "AM2",
+          "F2"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA",
+          "Q"
+        ]
+      },
+      "tipo": "homogénea"
+    },
+    "FQ": {
+      "id": "FQ",
+      "nombre": "Físico Química",
+      "requisitos": {
+        "regularizar": [
+          "AM2"
+        ],
+        "aprobar": [
+          "AM1",
+          "AGA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "DSOSP": {
+      "id": "DSOSP",
+      "nombre": "Diseño, Simulación, Optimización y Seguridad de Procesos",
+      "requisitos": {
+        "regularizar": [
+          "BME",
+          "MSA"
+        ],
+        "aprobar": [
+          "SSRR",
+          "FI",
+          "IEP",
+          "AM2",
+          "IT2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "OU1": {
+      "id": "OU1",
+      "nombre": "Operaciones Unitarias I",
+      "requisitos": {
+        "regularizar": [
+          "BME",
+          "Termo",
+          "FT"
+        ],
+        "aprobar": [
+          "IEP",
+          "AM2",
+          "F2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "TET": {
+      "id": "TET",
+      "nombre": "Tecnología de la Energía Térmica",
+      "requisitos": {
+        "regularizar": [
+          "BME",
+          "FQ",
+          "Termo",
+          "FT"
+        ],
+        "aprobar": [
+          "IEP",
+          "AM2",
+          "F2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "OU2": {
+      "id": "OU2",
+      "nombre": "Operaciones Unitarias II",
+      "requisitos": {
+        "regularizar": [
+          "FQ",
+          "Termo",
+          "FT"
+        ],
+        "aprobar": [
+          "IEP",
+          "AM2",
+          "F2",
+          "QO"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "IRQ": {
+      "id": "IRQ",
+      "nombre": "Ingeniería de las Reacciones Químicas",
+      "requisitos": {
+        "regularizar": [
+          "BME",
+          "FQ",
+          "Termo",
+          "FT"
+        ],
+        "aprobar": [
+          "QI",
+          "AM2",
+          "QOI"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CAP": {
+      "id": "CAP",
+      "nombre": "Control Automático de Procesos",
+      "requisitos": {
+        "regularizar": [
+          "DSOSP",
+          "OU2"
+        ],
+        "aprobar": [
+          "BME",
+          "MSA",
+          "QA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "PPBB": {
+      "id": "PPBB",
+      "nombre": "Procesos Biológicos",
+      "requisitos": {
+        "regularizar": [
+          "BME",
+          "FQ",
+          "FT",
+          "MQB"
+        ],
+        "aprobar": [
+          "IEP",
+          "QI",
+          "QO"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "HyST": {
+      "id": "HyST",
+      "nombre": "Higiene y Seguridad en el Trabajo",
+      "requisitos": {
+        "regularizar": [
+          "BME",
+          "QO",
+          "QI"
+        ],
+        "aprobar": [
+          "IEP"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CCEP": {
+      "id": "CCEP",
+      "nombre": "Calidad y Control Estadístico",
+      "requisitos": {
+        "regularizar": [
+          "PyE"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "IIT": {
+      "id": "IIT",
+      "nombre": "Introducción a la Industria Textil",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "Inglés1": {
+      "id": "Inglés1",
+      "nombre": "Inglés I",
+      "requisitos": {
+        "regularizar": [],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "FQOA": {
+      "id": "FQOA",
+      "nombre": "Fundamentos de Química Orgánica y Analítica",
+      "requisitos": {
+        "regularizar": [
+          "QG"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "D1": {
+      "id": "D1",
+      "nombre": "Diseño I",
+      "requisitos": {
+        "regularizar": [
+          "IIT"
+        ],
+        "aprobar": []
+      },
+      "tipo": "dedicada"
+    },
+    "QT": {
+      "id": "QT",
+      "nombre": "Química Textil",
+      "requisitos": {
+        "regularizar": [
+          "FQOA",
+          "FT"
+        ],
+        "aprobar": [
+          "FQOA",
+          "FT"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "FIT": {
+      "id": "FIT",
+      "nombre": "Fundamentos de Informática Textil",
+      "requisitos": {
+        "regularizar": [
+          "FT"
+        ],
+        "aprobar": [
+          "FT"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "FEM": {
+      "id": "FEM",
+      "nombre": "Fundamentos Eléctricos y Mecánicos",
+      "requisitos": {
+        "regularizar": [
+          "F2"
+        ],
+        "aprobar": [
+          "F2"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "D2": {
+      "id": "D2",
+      "nombre": "Diseño II",
+      "requisitos": {
+        "regularizar": [
+          "D1"
+        ],
+        "aprobar": [
+          "D1"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "HL": {
+      "id": "HL",
+      "nombre": "Hilandería de Lana",
+      "requisitos": {
+        "regularizar": [
+          "SSRR",
+          "FT"
+        ],
+        "aprobar": [
+          "SSRR",
+          "FT"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "HA": {
+      "id": "HA",
+      "nombre": "Hilandería de Algodón",
+      "requisitos": {
+        "regularizar": [
+          "SSRR",
+          "FT"
+        ],
+        "aprobar": [
+          "SSRR",
+          "FT"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "CI": {
+      "id": "CI",
+      "nombre": "Confección Industrial",
+      "requisitos": {
+        "regularizar": [
+          "D2",
+          "QT",
+          "HL",
+          "HA"
+        ],
+        "aprobar": [
+          "D2",
+          "QT",
+          "HL",
+          "HA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "Eco": {
+      "id": "Eco",
+      "nombre": "Economía",
+      "requisitos": {
+        "regularizar": [
+          "FT"
+        ],
+        "aprobar": [
+          "FT"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "SHI": {
+      "id": "SHI",
+      "nombre": "Seguridad e Higiene Industrial",
+      "requisitos": {
+        "regularizar": [
+          "QT"
+        ],
+        "aprobar": [
+          "QT"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "TPL": {
+      "id": "TPL",
+      "nombre": "Tejeduría de Punto y sus Ligamentos",
+      "requisitos": {
+        "regularizar": [
+          "FEM",
+          "HL",
+          "HA"
+        ],
+        "aprobar": [
+          "FEM",
+          "HL",
+          "HA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "TCL": {
+      "id": "TCL",
+      "nombre": "Tejeduría de Calada y sus Ligamentos",
+      "requisitos": {
+        "regularizar": [
+          "FEM",
+          "HL",
+          "HA"
+        ],
+        "aprobar": [
+          "FEM",
+          "HL",
+          "HA"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "GCIA": {
+      "id": "GCIA",
+      "nombre": "Gestión de Calidad e Ingeniería Ambiental",
+      "requisitos": {
+        "regularizar": [
+          "QT"
+        ],
+        "aprobar": [
+          "QT"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "FTC": {
+      "id": "FTC",
+      "nombre": "Fabricación de Tejidos de Calada",
+      "requisitos": {
+        "regularizar": [
+          "TPL"
+        ],
+        "aprobar": [
+          "TPL"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "PET": {
+      "id": "PET",
+      "nombre": "Procesos de Ennoblecimiento Textil",
+      "requisitos": {
+        "regularizar": [
+          "TE"
+        ],
+        "aprobar": [
+          "TE"
+        ]
+      },
+      "tipo": "dedicada"
+    },
+    "FTP": {
+      "id": "FTP",
+      "nombre": "Fabricación de Tejidos de Punto",
+      "requisitos": {
+        "regularizar": [
+          "TPL"
+        ],
+        "aprobar": [
+          "TE"
+        ]
+      },
+      "tipo": "dedicada"
+    }
+  },
+  "carrera": {
+    "sistemas": {
+      "nombre_completo": "Ingeniería en Sistemas de Información",
+      "version_abreviada": "Sistemas",
+      "nivel": {
+        "1": [
+          "SyPN",
+          "AM1",
+          "LyED",
+          "AyED",
+          "AdC",
+          "AGA",
+          "F1",
+          "IngSoc",
+          "ASI"
+        ],
+        "2": [
+          "AM2",
+          "SySL",
+          "PdP",
+          "IT1",
+          "F2",
+          "SSOO",
+          "PyE",
+          "DSI"
+        ],
+        "3": [
+          "IT2",
+          "ECO",
+          "DdS",
+          "BD",
+          "SI",
+          "CD",
+          "RD",
+          "ELE"
+        ],
+        "4": [
+          "AdmSI",
+          "AN",
+          "IyCS",
+          "Sim",
+          "Leg",
+          "IO",
+          "TpA",
+          "CdD"
+        ],
+        "5": [
+          "PF",
+          "IA",
+          "GC",
+          "SG",
+          "SSI",
+          "PPS"
+        ]
+      },
+      "cantidad": 5
+    },
+    "civil": {
+      "nombre_completo": "Ingeniería Civil",
+      "version_abreviada": "Civil",
+      "nivel": {
+        "1": [
+          "IC1",
+          "IC2",
+          "AGA",
+          "AM2",
+          "AM1",
+          "Est",
+          "IngSoc",
+          "TM"
+        ],
+        "2": [
+          "F1",
+          "F2",
+          "SSRR",
+          "PyE",
+          "QG",
+          "IT1",
+          "FI"
+        ],
+        "3": [
+          "IT2",
+          "TC",
+          "RM",
+          "DAPU",
+          "CA",
+          "TH",
+          "Gtecnia"
+        ],
+        "4": [
+          "Ggrafía",
+          "HGA",
+          "ITme",
+          "IEA",
+          "IL",
+          "ECO",
+          "ISG",
+          "AE1"
+        ],
+        "5": [
+          "EH",
+          "HOH",
+          "VC1",
+          "OCO",
+          "CMM",
+          "Cim",
+          "IS"
+        ],
+        "6": [
+          "AE2",
+          "VC2",
+          "GADS",
+          "PF",
+          "ELE",
+          "PPS"
+        ]
+      },
+      "cantidad": 6
+    },
+    "electrica": {
+      "nombre_completo": "Ingeniería en Energía Eléctrica",
+      "version_abreviada": "Electrica",
+      "nivel": {
+        "1": [
+          "Int1",
+          "Int2",
+          "AGA",
+          "AM1",
+          "F1",
+          "SSRR",
+          "QG",
+          "FI"
+        ],
+        "2": [
+          "IngSoc",
+          "AM2",
+          "PyE",
+          "Est",
+          "F2",
+          "Etecnia1",
+          "CN",
+          "IT1"
+        ],
+        "3": [
+          "ME1",
+          "F3",
+          "Termo",
+          "TEME",
+          "Etecnia2",
+          "IME",
+          "FAS",
+          "TC",
+          "TI"
+        ],
+        "4": [
+          "IEL",
+          "ME2",
+          "IT2",
+          "SREMA",
+          "E1",
+          "ECO",
+          "CA",
+          "MTHF",
+          "Leg"
+        ],
+        "5": [
+          "PF",
+          "GTDEE",
+          "SP",
+          "ACE",
+          "OAE",
+          "E2",
+          "ELE",
+          "PPS"
+        ]
+      },
+      "cantidad": 5
+    },
+    "electronica": {
+      "nombre_completo": "Ingeniería Electrónica",
+      "version_abreviada": "Electrónica",
+      "nivel": {
+        "1": [
+          "Info1",
+          "AGA",
+          "AM1",
+          "IngSoc",
+          "F1",
+          "QG",
+          "DAC"
+        ],
+        "2": [
+          "Info2",
+          "F2",
+          "AM2",
+          "IT1",
+          "PyE",
+          "FE"
+        ],
+        "3": [
+          "ASyS",
+          "TdC1",
+          "TD1",
+          "MdE",
+          "DE",
+          "EA1",
+          "IT2"
+        ],
+        "4": [
+          "Leg",
+          "EA2",
+          "TdC2",
+          "MIE",
+          "TD2",
+          "ME1"
+        ],
+        "5": [
+          "SdC",
+          "SHMA",
+          "ME2",
+          "PF",
+          "EA3",
+          "TD3",
+          "SC"
+        ],
+        "6": [
+          "EdP",
+          "TE",
+          "PPS",
+          "OI",
+          "ECO",
+          "ELE"
+        ]
+      },
+      "cantidad": 6
+    },
+    "industrial": {
+      "nombre_completo": "Ingeniería Industrial",
+      "version_abreviada": "Industrial",
+      "nivel": {
+        "1": [
+          "PS",
+          "AGA",
+          "AMI",
+          "AdmGen",
+          "AM2",
+          "F2",
+          "F1",
+          "IT1"
+        ],
+        "2": [
+          "SSRR",
+          "QG",
+          "Info1",
+          "IngSoc",
+          "EcoG",
+          "CdM",
+          "PyE",
+          "Info2"
+        ],
+        "3": [
+          "EdT",
+          "TMT",
+          "EME",
+          "ERM",
+          "CyP",
+          "ANCA",
+          "EdE",
+          "Com"
+        ],
+        "4": [
+          "EdP",
+          "Leg",
+          "IT2",
+          "InsInd",
+          "IO",
+          "PCP",
+          "SHIA",
+          "IeC",
+          "PPII"
+        ],
+        "5": [
+          "PF",
+          "Mant",
+          "CE",
+          "CdG",
+          "MMDP",
+          "DP",
+          "RRII",
+          "ELE",
+          "PPS"
+        ]
+      },
+      "cantidad": 5
+    },
+    "mecanica": {
+      "nombre_completo": "Ingeniería Mecánica",
+      "version_abreviada": "Mecánica",
+      "nivel": {
+        "1": [
+          "IM1",
+          "AGA",
+          "AM1",
+          "F1",
+          "FI",
+          "IngSoc"
+        ],
+        "2": [
+          "IM2",
+          "AM2",
+          "E1",
+          "F2",
+          "IASI",
+          "IT1",
+          "QG",
+          "SSRR",
+          "MM",
+          "MNM"
+        ],
+        "3": [
+          "IM3",
+          "Termo",
+          "DM",
+          "E2",
+          "IT2",
+          "MyE",
+          "CA",
+          "PyE"
+        ],
+        "4": [
+          "EM",
+          "ESC",
+          "TC",
+          "ECO",
+          "MIC",
+          "EME",
+          "E3"
+        ],
+        "5": [
+          "PF",
+          "InsInd",
+          "MANT",
+          "MAT",
+          "TdF",
+          "OI",
+          "Leg",
+          "ELE",
+          "PPS"
+        ]
+      },
+      "cantidad": 5
+    },
+    "naval": {
+      "nombre_completo": "Ingeniería Naval",
+      "version_abreviada": "Naval",
+      "nivel": {
+        "1": [
+          "IIN",
+          "AGA",
+          "AM1",
+          "InglésI",
+          "DN",
+          "F2",
+          "AM2",
+          "IngSoc"
+        ],
+        "2": [
+          "F1",
+          "SSRR",
+          "QG",
+          "FI",
+          "PyE",
+          "F3",
+          "AE1"
+        ],
+        "3": [
+          "Leg",
+          "ELE",
+          "TB1",
+          "TB2",
+          "Term",
+          "AB",
+          "EME",
+          "MAI"
+        ],
+        "4": [
+          "MAT",
+          "CN",
+          "AE3",
+          "MN",
+          "AE2",
+          "Inglés2",
+          "AN"
+        ],
+        "5": [
+          "PB",
+          "PEN",
+          "PPN",
+          "CEB",
+          "OI",
+          "Sold",
+          "AEF"
+        ],
+        "6": [
+          "PF",
+          "SHIA",
+          "EV",
+          "PA",
+          "PPS"
+        ]
+      },
+      "cantidad": 6
+    },
+    "quimica": {
+      "nombre_completo": "Ingeniería Química",
+      "version_abreviada": "Quimica",
+      "nivel": {
+        "1": [
+          "IIQ",
+          "SSRR",
+          "IT1",
+          "AGA",
+          "AM1",
+          "IngSoc",
+          "AM2",
+          "Q",
+          "IEP"
+        ],
+        "2": [
+          "QO",
+          "QI",
+          "F1",
+          "IT2",
+          "F2",
+          "PyE",
+          "FI",
+          "Leg"
+        ],
+        "3": [
+          "BME",
+          "QAp",
+          "Termo",
+          "CM",
+          "QA",
+          "MQB",
+          "FT",
+          "FQ",
+          "ECO"
+        ],
+        "4": [
+          "DSOSP",
+          "OU1",
+          "TET",
+          "OI",
+          "OU2",
+          "IRQ"
+        ],
+        "5": [
+          "PF",
+          "CAP",
+          "PPBB",
+          "MIE",
+          "HyST",
+          "IA",
+          "CCEP",
+          "ELE",
+          "PPS"
+        ]
+      },
+      "cantidad": 5
+    },
+    "textil": {
+      "nombre_completo": "Ingeniería Textil",
+      "version_abreviada": "Textil",
+      "nivel": {
+        "1": [
+          "IIT",
+          "AGA",
+          "AM1",
+          "F1",
+          "Inglés1",
+          "IngSoc",
+          "QG"
+        ],
+        "2": [
+          "FT",
+          "AM2",
+          "F2",
+          "PyE",
+          "FQOA",
+          "SSRR",
+          "IT2",
+          "D1"
+        ],
+        "3": [
+          "QT",
+          "CN",
+          "FIT",
+          "FEM",
+          "D2",
+          "HL",
+          "Termo",
+          "HA"
+        ],
+        "4": [
+          "CI",
+          "Eco",
+          "SHI",
+          "TPL",
+          "TE",
+          "Leg",
+          "TCL",
+          "GCIA"
+        ],
+        "5": [
+          "PF",
+          "FTC",
+          "PET",
+          "FTP",
+          "ELE",
+          "PPS"
+        ]
+      },
+      "cantidad": 5
+    }
+  }
+}
