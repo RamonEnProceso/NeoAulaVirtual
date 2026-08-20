@@ -1,7 +1,7 @@
 import Avatar from '../../../shared/components/Avatar'
 import { currentProfile } from '../../../shared/profile'
 import styles from './ProfileHeader.module.css'
-import { cutString } from '../../../shared/logic/cutString'
+import { cutString } from '../../../shared/utils/cutString'
 
 function ProfileHeader() {
   return (
