@@ -1,0 +1,85 @@
+/* ============================================================
+   NEO AULA VIRTUAL — PALETA DE COLORES (Design Tokens)
+   ============================================================
+   Extraída de las maquetas de Figma (SVGs).
+   Usá estas variables en cualquier CSS/Module del proyecto:
+   background: var(--utn-red);
+
+   ┌─ SWATCH REFERENCIA ──────────────────────────────────────┐
+   │                                                          │
+   │  ████ ROJO UTN (primario)      --utn-red: #b71234        │
+   │  ████ Rojo oscuro (hover)      --utn-red-dark: #c31632   │
+   │  ████ Rojo badge               --utn-red-badge: #f14252  │
+   │                                                          │
+   │  ████ Rosa tarjeta (alerta)    --rose-card: #fdced0      │
+   │  ████ Rosa borde               --rose-border: #fba6a9    │
+   │  ████ Rosa fondo (login)       --rose-bg: #ffebec        │
+   │                                                          │
+   │  ████ Verde tarjeta            --green-card: #a0dd98     │
+   │  ████ Verde borde              --green-border: #6fc464   │
+   │  ████ Verde badge              --green-badge: #459c3a    │
+   │  ████ Verde badge borde        --green-badge-border: #295724
+   │                                                          │
+   │  ████ Ámbar tarjeta            --amber-card: #fbecca     │
+   │  ████ Ámbar borde              --amber-border: #f1ae42   │
+   │  ████ Ámbar badge              --amber-badge: #e98517    │
+   │  ████ Ámbar badge borde        --amber-badge-border: #ce6211
+   │                                                          │
+   │  ████ Gris tarjeta             --gray-card: #e6e6e6      │
+   │  ████ Gris borde               --gray-border: #d1d1d1    │
+   │  ████ Gris badge               --gray-badge: #9a9a9a     │
+   │  ████ Gris badge borde         --gray-badge-border: #6d6d6d
+   │                                                          │
+   │  ████ Superficie (blanco)      --surface: #ffffff         │
+   │  ████ Texto principal          --text-primary: #1f1f1f    │
+   │  ████ Texto sobre color        --text-on-color: #ffffff   │
+   └──────────────────────────────────────────────────────────┘
+
+   Convención de uso:
+   - Estado APROBADO / ok       → verde
+   - Estado EN CURSO / próximo  → ámbar
+   - Estado VENCIDO / pendiente → rojo / rosa
+   - Estado NO INICIADO         → gris
+   ============================================================ */
+
+:root {
+  /* Primarios UTN */
+  --utn-red: #b71234;
+  --utn-red-dark: #c31632;
+  --utn-red-badge: #f14252;
+
+  /* Rosas (alerta / vencido) */
+  --rose-card: #fdced0;
+  --rose-border: #fba6a9;
+  --rose-bg: #ffebec;
+
+  /* Verdes (aprobado / ok) */
+  --green-card: #a0dd98;
+  --green-border: #6fc464;
+  --green-badge: #459c3a;
+  --green-badge-border: #295724;
+
+  /* Ámbar (en curso / próximo) */
+  --amber-card: #fbecca;
+  --amber-border: #f1ae42;
+  --amber-badge: #e98517;
+  --amber-badge-border: #ce6211;
+
+  /* Grises (no iniciado) */
+  --gray-card: #e6e6e6;
+  --gray-border: #d1d1d1;
+  --gray-badge: #9a9a9a;
+  --gray-badge-border: #6d6d6d;
+
+  /* Neutros */
+  --surface: #ffffff;
+  --text-primary: #1f1f1f;
+  --text-on-color: #ffffff;
+
+  /* Radios */
+  --radius-card: 9px;
+  --radius-badge: 10px;
+
+  /* Layout mobile-first */
+  --mobile-max-width: 384px;
+}
