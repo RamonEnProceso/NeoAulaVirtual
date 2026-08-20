@@ -34,7 +34,6 @@ Los estudiantes de la UTN acceden al Aula Virtual mayoritariamente desde disposi
       <br/>Captura -
       <br/>"Inicio"
     </td>
-    </td>
     <td align="center">
       <img src="./assets/screenshots/02.webp" alt="Captura - Área de materia"/>
       <br/>Captura -
@@ -46,7 +45,6 @@ Los estudiantes de la UTN acceden al Aula Virtual mayoritariamente desde disposi
       <img src="./assets/screenshots/03.webp" alt="Captura - Menú Lateral"/>
       <br/>Captura -
       <br/>"Menú Lateral"
-    </td>
     </td>
     <td align="center">
       <img src="./assets/screenshots/04.webp" alt="Captura - Sección Material"/>
