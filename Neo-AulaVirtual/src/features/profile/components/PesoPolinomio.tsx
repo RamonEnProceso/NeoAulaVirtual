@@ -44,7 +44,6 @@ function PesoPolinomioCard() {
             )
           })}
         </span>
-        <span className={styles.hint}>Tocá para ver el polinomio original</span>
       </button>
 
       {visible && (
