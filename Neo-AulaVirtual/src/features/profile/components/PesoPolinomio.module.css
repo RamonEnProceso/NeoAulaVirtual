@@ -1,0 +1,141 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 2px solid var(--gray-border);
+  border-radius: 19px;
+  padding: 14px 20px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text-primary);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.1s ease;
+}
+
+.card:active {
+  transform: scale(0.99);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--utn-red);
+  outline-offset: 2px;
+}
+
+.ecuacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.prefix {
+  font-weight: 700;
+}
+
+.termino {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.signo {
+  color: var(--gray-badge);
+  padding: 0 2px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 5px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.chipRed {
+  color: var(--utn-red)
+}
+
+.chipAmber {
+  color: var(--amber-border)
+}
+
+.chipGreen {
+  color: var(--green-badge)
+}
+
+.chipGray {
+  color: #525050;
+}
+
+.hint {
+  font-size: 11px;
+  color: var(--gray-badge);
+}
+
+/* ── Notificación (toast) ───────────────────────────── */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 96px;
+  transform: translateX(-50%);
+  width: min(320px, calc(100vw - 32px));
+  background: var(--surface);
+  border: 2px solid var(--utn-red);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  z-index: 50;
+  animation: subir 0.18s ease;
+}
+
+.toastHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.toastTitulo {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--utn-red);
+}
+
+.cerrar {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--gray-badge);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.cerrar:hover {
+  color: var(--utn-red);
+}
+
+.toastTexto {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}

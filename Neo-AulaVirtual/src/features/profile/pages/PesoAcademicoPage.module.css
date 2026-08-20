@@ -1,0 +1,182 @@
+.page {
+  /* Rompe el padding de 16px del layout para que el header sea full-bleed */
+  margin: -16px -16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.body {
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.titulo {
+  padding: 5px 0;
+  margin: 0;
+  color: var(--utn-red);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ── Tonos (variables) ───────────────────────────────
+   La card hero define su propio tono; los badges
+   definen el suyo por fila. */
+
+.heroRed {
+  --tone-border: var(--rose-border);
+  --tone-box-bg: var(--rose-card);
+  --tone-box-border: var(--rose-border);
+  --badge-bg: var(--utn-red-badge);
+  --badge-border: var(--utn-red-dark);
+}
+
+.heroAmber {
+  --tone-border: var(--amber-border);
+  --tone-box-bg: var(--amber-card);
+  --tone-box-border: var(--amber-border);
+  --badge-bg: var(--amber-badge);
+  --badge-border: var(--amber-badge-border);
+}
+
+.heroGreen {
+  --tone-border: var(--green-border);
+  --tone-box-bg: var(--green-card);
+  --tone-box-border: var(--green-badge);
+  --badge-bg: var(--green-badge);
+  --badge-border: var(--green-badge-border);
+}
+
+.badgeRed {
+  --badge-border: var(--utn-red);
+}
+
+.badgeAmber {
+  --badge-border: var(--amber-border);
+}
+
+.badgeGreen {
+  --badge-border: var(--green-badge);
+}
+
+.badgeGrey {
+  --badge-border: #525050;
+}
+
+/* ── Card hero (score) ─────────────────────────────── */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--surface);
+  border: 2px solid var(--tone-border);
+  border-radius: 19px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.heroInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.heroLabel {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.estado {
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-on-color);
+  background: var(--badge-bg);
+  border: 2px solid var(--badge-border);
+}
+
+.heroBox {
+  min-width: 96px;
+  height: 88px;
+  border-radius: 9px;
+  background: var(--tone-box-bg);
+  border: 2px solid var(--tone-box-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroScore {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+/* ── Card desglose ─────────────────────────────────── */
+
+.card {
+  background: var(--surface);
+  border: 2px solid var(--gray-border);
+  border-radius: 19px;
+  padding: 4px 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--gray-border);
+}
+
+.fila:last-child {
+  border-bottom: none;
+}
+
+.filaLabel {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.filaDetalle {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--gray-badge);
+}
+
+.badge {
+  min-width: 44px;
+  padding: 4px 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--badge-border);
+}
+
+.formula {
+  margin: 0;
+  padding: 10px 0 14px;
+  font-size: 11px;
+  color: var(--gray-badge);
+  line-height: 1.5;
+}

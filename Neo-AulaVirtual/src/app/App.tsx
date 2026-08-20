@@ -5,7 +5,9 @@ import HomePage from '../features/home/pages/HomePage'
 import SubjectsPage from '../features/subjects/pages/SubjectsPage'
 import NotificationsPage from '../features/notifications/pages/NotificationsPage'
 import ProfilePage from '../features/profile/pages/ProfilePage'
+import AvancePage from '../features/avance/pages/AvancePage'
 import CareerPage from '../features/career/pages/CareerPage'
+import PesoAcademico from '../features/profile/pages/PesoAcademicoPage'
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/materias" element={<SubjectsPage />} />
           <Route path="/notificaciones" element={<NotificationsPage />} />
           <Route path="/perfil" element={<ProfilePage />} />
+          <Route path="/peso" element={<PesoAcademico/>} />
+          <Route path="/avance" element={<AvancePage />} />
           <Route path="/carrera" element={<CareerPage />} />
         </Route>
       </Routes>

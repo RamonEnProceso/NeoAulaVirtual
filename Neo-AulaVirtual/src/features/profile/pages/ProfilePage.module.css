@@ -1,0 +1,21 @@
+.page {
+  /* Rompe el padding de 16px del layout para que el header sea full-bleed */
+  margin: -16px -16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.body {
+  padding: 0 16px 16px;
+}
+
+.titulo{
+  padding: 5px 0;
+  margin-bottom: 15px;
+  color: var(--utn-red);
+}
+
+.section{
+  margin-bottom: 20px;
+}

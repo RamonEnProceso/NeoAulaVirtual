@@ -1,43 +1,39 @@
 import { Link } from 'react-router-dom'
 import { currentProfile } from '../../../shared/profile'
+import { calcPesoAcademico, tonoPesoAcademico, estadoPesoAcademico } from '../logic/calcPesoAcademico'
+import type { ScoreTone } from '../logic/calcPesoAcademico'
 import styles from './PesoAcademico.module.css'
-import { calcPesoAcademico } from '../logic/calcPesoAcademico';
+
+const TONO: Record<ScoreTone, string> = {
+  red: styles.red,
+  amber: styles.amber,
+  green: styles.green,
+}
 
 function PesoAcademicoCard() {
-  const pesoAcademico = currentProfile.pesoAcademico;
+  const score = calcPesoAcademico(currentProfile)
+  const estado = estadoPesoAcademico(score)
 
   return (
-    <Link to="/peso" className={styles.card}>
-        <div className={styles.container}>
-            <div className={styles.left}>
-                <p className={styles.number}>{calcPesoAcademico(currentProfile)}</p>
-            </div>
-            <div className={styles.right}>
-                <p><span>MAp_t:</span> {pesoAcademico.map_total}</p>
-                <p><span>FAd_t:</span> {pesoAcademico.fad_total}</p>
-                <p><span>FAu_c:</span> {pesoAcademico.fau_ciclo}</p>
-                <p><span>MAb_c:</span> {pesoAcademico.mab_ciclo}</p>
-                <p><span>MR_c:</span> {pesoAcademico.mr_ciclo}</p>
-            </div>
-            <div className={styles.button}>
-                    <svg
-                className={styles.chevron}
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-                >
-                <path
-                    d="M9 6l6 6-6 6"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-            </svg>
-            </div>
-        </div>
+    <Link to="/peso" className={`${styles.card} ${TONO[tonoPesoAcademico(score)]}`}>
+      <div className={styles.info}>
+        <p className={styles.label}>Peso académico</p>
+        <span className={styles.estado}>{estado}</span>
+      </div>
+      <div className={styles.box}>
+        <span className={styles.number}>{score}</span>
+      </div>
+      <span className={styles.chevron} aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M9 6l6 6-6 6"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </span>
     </Link>
   )
 }
