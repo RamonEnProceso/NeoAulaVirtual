@@ -1,0 +1,36 @@
+.card {
+  display: block;
+  background: var(--surface);
+  border: 2px solid var(--rose-border);
+  border-radius: 19px;
+  padding: 14px 20px 18px;
+  text-decoration: none;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.1s ease;
+}
+
+.card:active {
+  transform: scale(0.99);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--utn-red);
+  outline-offset: 2px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.greeting {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.chevron {
+  color: var(--gray-badge);
+}
