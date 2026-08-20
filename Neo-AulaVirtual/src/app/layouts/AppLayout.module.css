@@ -1,0 +1,14 @@
+.layout {
+  width: 100%;
+  max-width: var(--mobile-max-width);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
+}
+
+.content {
+  flex: 1;
+  padding: 16px;
+}
