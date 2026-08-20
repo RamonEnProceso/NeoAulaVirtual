@@ -16,6 +16,10 @@ real de su situación en la carrera y en cada materia.
 
 - **Agenda personal por materia** — cada materia permite cargar horarios propios para que la interfaz se adapte al día del estudiante.
 - **Seguidor de carrera** — vista del progreso e hitos académicos acumulados a lo largo de la carrera.
+  - Cuánto falta cursar
+  - Correlativas
+  - Estado por materia (aprobada / firmada / sin aprobar)
+  - Calificaciones, días de clase y aula
 - **Burndown chart adaptado** — herramienta inspirada en SCRUM que muestra qué tan al día está el alumno con las entregas de cada materia. Los datos se calculan a partir del tiempo promedio de respuesta desde que se anuncia cada tarea, o se cargan manualmente por el profesor.
 - **OKR académico** — sistema para que el alumno defina objetivos medibles alineados a su carrera y haga seguimiento de su progreso.
 
@@ -27,9 +31,20 @@ Mecanismos de reconocimiento y motivación distribuidos en la interfaz.
   Ej: Mejor promedio en Física I (2026), Ganador del
   Torneo de Fútbol (2023), Mejor compañero en foros (2024)
 
+## Mapa Interactivo
+Mapa 3D para encontrar las aulas en la facultad.
+
+
 ## IA — Trabajo futuro
 Asistente cognitivo integrado al aula, entrenado con material de cada cátedra. A diferencia de herramientas como NotebookLM, el asistente fomentaría la lectura del material original en lugar de reemplazarla.
 - Límite de interacciones diarias (2-3 cada 24hs),
   ampliable mediante puntos obtenidos en actividades
   académicas.
 - Requiere backend con FastAPI + Ollama.
+
+## Herramientas complementarias
+
+Utilidades de estudio integradas a la plataforma. **Alcance secundario**: no atacan las fricciones identificadas del Aula Virtual, por lo que se implementan solo si el núcleo y el progreso académico están completos.
+
+- **Pomodoro** — temporizador de sesiones de estudio que refuerza la conciencia del tiempo que plantea el indicador de semana actual.
+- **Conversor de bases numéricas** — apoyo para materias de base (Algoritmos, Arquitectura de Computadoras): conversión entre binario, octal, decimal y hexadecimal sin salir de la plataforma.
