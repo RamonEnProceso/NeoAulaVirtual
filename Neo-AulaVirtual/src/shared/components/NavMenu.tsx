@@ -17,7 +17,7 @@ const items: NavItem[] = [
   { to: '/', label: 'Inicio', icon: <HomeIcon aria-hidden="true" /> },
   { to: '/materias', label: 'Materias', icon: <SubjectsIcon aria-hidden="true" /> },
   { to: '/notificaciones', label: 'Notificaciones', icon: <BellIcon aria-hidden="true" /> },
-  { to: '/perfil', label: 'Perfil', icon: <Avatar src={currentProfile.photo} size={28} /> },
+  { to: '/perfil', label: 'Perfil', icon: <Avatar src={currentProfile.foto} size={28} /> },
 ]
 
 function NavMenu() {
