@@ -2393,15 +2393,15 @@
       },
       "tipo": "dedicada"
     },
-    "Inglés2": {
-      "id": "Inglés2",
+    "I2": {
+      "id": "I2",
       "nombre": "Inglés II",
       "requisitos": {
         "regularizar": [
-          "Inglés1"
+          "I1"
         ],
         "aprobar": [
-          "Inglés1"
+          "I1"
         ]
       },
       "tipo": "dedicada"
@@ -2849,8 +2849,8 @@
       },
       "tipo": "dedicada"
     },
-    "Inglés1": {
-      "id": "Inglés1",
+    "I1": {
+      "id": "I1",
       "nombre": "Inglés I",
       "requisitos": {
         "regularizar": [],
@@ -3151,7 +3151,260 @@
           "PPS"
         ]
       },
-      "cantidad": 5
+      "cantidad": 5,
+      "electivas": {
+        "nota": "En Tercero te piden 1 de 3 hs anual, en Cuarto son 2 y en Quinto son 4 con la misma carga horaria cada una.",
+        "materias": [
+          {
+            "id": "ES4AECH",
+            "nombre": "Administración Estratégica del Capital Humano",
+            "niveles": [
+              4
+            ]
+          },
+          {
+            "id": "ES5ASC",
+            "nombre": "Arquitectura de Software Concurrente",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5BDNS",
+            "nombre": "Bases de Datos No SQL",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5B",
+            "nombre": "Bioinformática",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES3C",
+            "nombre": "Ciberseguridad",
+            "niveles": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "ES5CI",
+            "nombre": "Ciberseguridad Industrial",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5CDGE",
+            "nombre": "Ciudades Digitales y Gobierno Electrónico",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES3C-2",
+            "nombre": "Criptografía",
+            "niveles": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "ES5DADM",
+            "nombre": "Desarrollo de Aplicaciones para Dispositivos Móviles",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5DMA",
+            "nombre": "Desarrollo de Modelos Analíticos",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5DE",
+            "nombre": "Dirección Estratégica",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5EC",
+            "nombre": "Economía del Conocimiento",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES3EUA",
+            "nombre": "Experiencia de Usuario y Accesibilidad",
+            "niveles": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "ES5GED",
+            "nombre": "Gestión de Empresas Digitales",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5GTO",
+            "nombre": "Gestión de la Transformación Organizacional",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES3GTH",
+            "nombre": "Gestión del Talento Humano",
+            "niveles": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "ES3IR",
+            "nombre": "Ingeniería de Requisitos",
+            "niveles": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "ES5IAA",
+            "nombre": "Inteligencia Artificial Avanzada",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5IN",
+            "nombre": "Inteligencia de Negocios",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES3MCET",
+            "nombre": "Metodología de la Conducción de Equipos de Trabajo",
+            "niveles": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "ES5NA",
+            "nombre": "Neurociencia Aplicada",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5PI",
+            "nombre": "Pericias Informáticas",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5PV",
+            "nombre": "Plataformas de Virtualización",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5PIS",
+            "nombre": "Procesamiento de Imágenes y Señales",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5SAW",
+            "nombre": "Seguridad en Aplicaciones Web",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5SAT",
+            "nombre": "Sistemas Avanzados de Telecomunicaciones",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES5SCP",
+            "nombre": "Sistemas de Costos y Presupuestos",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES3TAP",
+            "nombre": "Técnicas Avanzadas de Programación",
+            "niveles": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "ES3TGC",
+            "nombre": "Técnicas Gráficas por Computadora",
+            "niveles": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "ES5TASD",
+            "nombre": "Tecnologías Aplicadas a Soluciones de Datos",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES4TACS",
+            "nombre": "Tecnologías Avanzadas en la Construcción de Software",
+            "niveles": [
+              4
+            ]
+          },
+          {
+            "id": "ES5TAR",
+            "nombre": "Tecnologías Avanzadas en Redes",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ES3TET",
+            "nombre": "Tendencias y Escenarios Tecnológicos",
+            "niveles": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "ES3TD",
+            "nombre": "Transformación Digital",
+            "niveles": [
+              3,
+              4
+            ]
+          }
+        ]
+      }
     },
     "civil": {
       "nombre_completo": "Ingeniería Civil",
@@ -3213,7 +3466,156 @@
           "PPS"
         ]
       },
-      "cantidad": 6
+      "cantidad": 6,
+      "electivas": {
+        "nota": "Se piden 11 hs anuales.",
+        "materias": [
+          {
+            "id": "EC6A",
+            "nombre": "Aeropuertos",
+            "niveles": [
+              6
+            ],
+            "perfil": "Vías de Comunicación"
+          },
+          {
+            "id": "EC6CC",
+            "nombre": "Construcción de Carreteras",
+            "niveles": [
+              6
+            ],
+            "perfil": "Vías de Comunicación"
+          },
+          {
+            "id": "EC6CSA",
+            "nombre": "Contaminación y Saneamiento Ambiental",
+            "niveles": [
+              6
+            ],
+            "perfil": "Ambiental"
+          },
+          {
+            "id": "EC5ER",
+            "nombre": "Energías Renovables",
+            "niveles": [
+              5
+            ],
+            "perfil": "Ambiental"
+          },
+          {
+            "id": "EC6EA",
+            "nombre": "Estructuras Antisísmicas",
+            "niveles": [
+              6
+            ],
+            "perfil": "Construcciones"
+          },
+          {
+            "id": "EC6EE",
+            "nombre": "Estructuras Especiales",
+            "niveles": [
+              6
+            ],
+            "perfil": "Construcciones"
+          },
+          {
+            "id": "EC5F",
+            "nombre": "Ferrocarriles",
+            "niveles": [
+              5
+            ],
+            "perfil": "Vías de Comunicación"
+          },
+          {
+            "id": "EC5GA",
+            "nombre": "Geología Aplicada",
+            "niveles": [
+              5
+            ],
+            "perfil": "Vías de Comunicación"
+          },
+          {
+            "id": "EC5GA-H",
+            "nombre": "Geología Aplicada",
+            "niveles": [
+              5
+            ],
+            "perfil": "Hidráulica"
+          },
+          {
+            "id": "EC6GC",
+            "nombre": "Gestión de Cuencas",
+            "niveles": [
+              6
+            ],
+            "perfil": "Hidráulica"
+          },
+          {
+            "id": "EC6GCA",
+            "nombre": "Gestión y Calidad del Agua",
+            "niveles": [
+              6
+            ],
+            "perfil": "Ambiental"
+          },
+          {
+            "id": "EC5PUS",
+            "nombre": "Planificación Urbana Sustentable",
+            "niveles": [
+              5
+            ],
+            "perfil": "Ambiental"
+          },
+          {
+            "id": "EC5PUS-C",
+            "nombre": "Planificación Urbana Sustentable",
+            "niveles": [
+              5
+            ],
+            "perfil": "Construcciones"
+          },
+          {
+            "id": "EC5P",
+            "nombre": "Prefabricación",
+            "niveles": [
+              5
+            ],
+            "perfil": "Construcciones"
+          },
+          {
+            "id": "EC5PCH",
+            "nombre": "Presas y Centrales Hidroeléctricas",
+            "niveles": [
+              5
+            ],
+            "perfil": "Hidráulica"
+          },
+          {
+            "id": "EC5PVN",
+            "nombre": "Puertos y Vías Navegables",
+            "niveles": [
+              5
+            ],
+            "perfil": "Vías de Comunicación"
+          },
+          {
+            "id": "EC5PVN-H",
+            "nombre": "Puertos y Vías Navegables",
+            "niveles": [
+              5
+            ],
+            "perfil": "Hidráulica"
+          },
+          {
+            "id": "EC6TGP",
+            "nombre": "Túneles y Grandes Puentes",
+            "niveles": [
+              6
+            ],
+            "perfil": "Construcciones"
+          }
+        ]
+      }
     },
     "electrica": {
       "nombre_completo": "Ingeniería en Energía Eléctrica",
@@ -3272,7 +3674,40 @@
           "PPS"
         ]
       },
-      "cantidad": 5
+      "cantidad": 5,
+      "electivas": {
+        "nota": "Se piden 20 hs cuatrimestrales (10 hs anuales).",
+        "materias": [
+          {
+            "id": "EE5ER1",
+            "nombre": "Energías Renovables 1",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EE5I",
+            "nombre": "Instrumentación",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EE5PCSE",
+            "nombre": "Protección y Control de Sistemas Eléctricos",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EE5RI",
+            "nombre": "Redes Inteligentes",
+            "niveles": [
+              5
+            ]
+          }
+        ]
+      }
     },
     "electronica": {
       "nombre_completo": "Ingeniería Electrónica",
@@ -3330,7 +3765,82 @@
           "ELE"
         ]
       },
-      "cantidad": 6
+      "cantidad": 6,
+      "electivas": {
+        "nota": "Se piden 16 hs cuatrimestrales.",
+        "materias": [
+          {
+            "id": "EE6ADNA",
+            "nombre": "Aviónica Digital para la Navegación Aérea",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EE6DADM",
+            "nombre": "Desarrollo de Aplicaciones para Dispositivos Móviles",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EE6DSA",
+            "nombre": "Diseño y Simulación de Antenas",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EE6EAA",
+            "nombre": "Electrónica Aplicada al Automotor",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EE6IIA",
+            "nombre": "Introducción a la Inteligencia Artificial",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EE6IDCI",
+            "nombre": "Introducción al Diseño de Circuitos Impresos",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EE6IDV",
+            "nombre": "Introducción al Diseño de VLSI",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EE6PDS",
+            "nombre": "Procesamiento Digital de Señales",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EE6RL",
+            "nombre": "Redes LAN",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EE6R",
+            "nombre": "Robótica",
+            "niveles": [
+              6
+            ]
+          }
+        ]
+      }
     },
     "industrial": {
       "nombre_completo": "Ingeniería Industrial",
@@ -3389,7 +3899,82 @@
           "PPS"
         ]
       },
-      "cantidad": 5
+      "cantidad": 5,
+      "electivas": {
+        "nota": "Se piden 20 hs cuatrimestrales (10 hs anuales), es decir 4 materias de 5 hs cuatrimestrales.",
+        "materias": [
+          {
+            "id": "EI5AL",
+            "nombre": "Automatización en Logística",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EI5E",
+            "nombre": "Ergonomía",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EI5FFSI",
+            "nombre": "Fabricación Flexible y Sistemas Inteligentes",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EI5GE",
+            "nombre": "Gestión Empresarial",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EI5IC2",
+            "nombre": "Inglés Comunicacional 2",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EI5L",
+            "nombre": "Logística",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EI5MI",
+            "nombre": "Marketing Industrial",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EI5PE",
+            "nombre": "Política Económica",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EI5RSE",
+            "nombre": "Responsabilidad Social Empresaria",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EI5TGE",
+            "nombre": "Tecnología y Gestión de la Energía",
+            "niveles": [
+              5
+            ]
+          }
+        ]
+      }
     },
     "mecanica": {
       "nombre_completo": "Ingeniería Mecánica",
@@ -3446,7 +4031,103 @@
           "PPS"
         ]
       },
-      "cantidad": 5
+      "cantidad": 5,
+      "electivas": {
+        "nota": "Se piden 20 hs cuatrimestrales (10 hs anuales).",
+        "materias": [
+          {
+            "id": "EM4AI",
+            "nombre": "Automatización Industrial",
+            "niveles": [
+              4
+            ]
+          },
+          {
+            "id": "EM5A",
+            "nombre": "Automotores",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EM4CEF",
+            "nombre": "Cálculo por Elementos Finitos",
+            "niveles": [
+              4
+            ]
+          },
+          {
+            "id": "EM4CTS",
+            "nombre": "Ciencia y Tecnología de la Soldadura",
+            "niveles": [
+              4
+            ]
+          },
+          {
+            "id": "EM2D3",
+            "nombre": "Diseño en 3D",
+            "niveles": [
+              2
+            ]
+          },
+          {
+            "id": "EM3ER",
+            "nombre": "Energías Renovables",
+            "niveles": [
+              3
+            ]
+          },
+          {
+            "id": "EM4EGPIS",
+            "nombre": "Evaluación y Gestión de Proyectos de Ingeniería Sustentable",
+            "niveles": [
+              4
+            ]
+          },
+          {
+            "id": "EM3I4",
+            "nombre": "Industria 4.0",
+            "niveles": [
+              3
+            ]
+          },
+          {
+            "id": "EM4ITF",
+            "nombre": "Introducción a Tecnologías Ferroviarias",
+            "niveles": [
+              4
+            ]
+          },
+          {
+            "id": "EM5PIAAR",
+            "nombre": "Proyecto de Instalaciones de Aire Acondicionado y Refrigeración",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EM5RI",
+            "nombre": "Robótica Industrial",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EM3TMI",
+            "nombre": "Tecnología Mecánica (Intermedio)",
+            "niveles": [
+              3
+            ]
+          },
+          {
+            "id": "EM5TFT",
+            "nombre": "Transporte de Fluidos por Tuberias",
+            "niveles": [
+              5
+            ]
+          }
+        ]
+      }
     },
     "naval": {
       "nombre_completo": "Ingeniería Naval",
@@ -3487,7 +4168,7 @@
           "AE3",
           "MN",
           "AE2",
-          "Inglés2",
+          "I2",
           "AN"
         ],
         "5": [
@@ -3507,7 +4188,40 @@
           "PPS"
         ]
       },
-      "cantidad": 6
+      "cantidad": 6,
+      "electivas": {
+        "nota": "Se pide la materia de segundo, la de cuarto y una de sexto.",
+        "materias": [
+          {
+            "id": "EN6BM",
+            "nombre": "Buques Militares",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EN4DA",
+            "nombre": "Diseño Asistido",
+            "niveles": [
+              4
+            ]
+          },
+          {
+            "id": "EN6ED",
+            "nombre": "Embarcaciones Deportivas",
+            "niveles": [
+              6
+            ]
+          },
+          {
+            "id": "EN2N",
+            "nombre": "Navegación",
+            "niveles": [
+              2
+            ]
+          }
+        ]
+      }
     },
     "quimica": {
       "nombre_completo": "Ingeniería Química",
@@ -3565,7 +4279,75 @@
           "PPS"
         ]
       },
-      "cantidad": 5
+      "cantidad": 5,
+      "electivas": {
+        "nota": "Se piden 24 hs cuatrimestrales.",
+        "materias": [
+          {
+            "id": "EQ5AOV",
+            "nombre": "Alimentos de Origen Vegetal",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EQ3CEF",
+            "nombre": "Cálculo por Elementos Finitos",
+            "niveles": [
+              3
+            ]
+          },
+          {
+            "id": "EQ3EIQ",
+            "nombre": "Electrónica para Ingeniería Química",
+            "niveles": [
+              3
+            ]
+          },
+          {
+            "id": "EQ5EA",
+            "nombre": "Electroquímica Aplicada",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EQ2GC",
+            "nombre": "Gestión de la Calidad",
+            "niveles": [
+              2
+            ]
+          },
+          {
+            "id": "EQ5IAS",
+            "nombre": "Ingeniería Ambiental y Sustentabilidad",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "EQ3IEP",
+            "nombre": "Instalaciones Eléctricas de Planta",
+            "niveles": [
+              3
+            ]
+          },
+          {
+            "id": "EQ3RAN",
+            "nombre": "Radioquímica y Aplicaciones Nucleares",
+            "niveles": [
+              3
+            ]
+          },
+          {
+            "id": "EQ5TFE",
+            "nombre": "Tratamiento Fisicoquímico de Efluentes",
+            "niveles": [
+              5
+            ]
+          }
+        ]
+      }
     },
     "textil": {
       "nombre_completo": "Ingeniería Textil",
@@ -3576,7 +4358,7 @@
           "AGA",
           "AM1",
           "F1",
-          "Inglés1",
+          "I1",
           "IngSoc",
           "QG"
         ],
@@ -3619,7 +4401,40 @@
           "PPS"
         ]
       },
-      "cantidad": 5
+      "cantidad": 5,
+      "electivas": {
+        "nota": "Se piden 10 hs anual.",
+        "materias": [
+          {
+            "id": "ET5GI",
+            "nombre": "Gerenciamiento Industrial",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ET5GDI",
+            "nombre": "Gestión del Diseño y la Innovación",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ET5OI",
+            "nombre": "Organización Industrial",
+            "niveles": [
+              5
+            ]
+          },
+          {
+            "id": "ET5PPTI",
+            "nombre": "Procesos y Productos Textiles Innovadores",
+            "niveles": [
+              5
+            ]
+          }
+        ]
+      }
     }
   }
 }
