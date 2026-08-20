@@ -1,0 +1,44 @@
+.profile {
+  position: relative;
+  height: 188px;
+  background: var(--utn-red);
+  padding: 28px 21px;
+}
+
+.data {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 180px;
+  color: var(--text-on-color);
+}
+
+.name {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.mail {
+  font-size: 12px;
+  opacity: 0.85;
+  line-height: 1.3;
+}
+
+.legajo {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1;
+}
+
+.avatarWrap {
+  position: absolute;
+  top: 28px;
+  right: 21px;
+}
