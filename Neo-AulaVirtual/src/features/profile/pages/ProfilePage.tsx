@@ -12,8 +12,11 @@ function ProfilePage() {
           <h2 className={styles.titulo}>Carrera</h2>
           <ProgressCard />
         </section>
-        <section>
+        <section className={styles.section}>
           <PesoAcademicoCard />
+        </section>
+        <section>
+          
         </section>
       </div>
     </main>
