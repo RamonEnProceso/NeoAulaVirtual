@@ -3100,6 +3100,7 @@
     "sistemas": {
       "nombre_completo": "Ingeniería en Sistemas de Información",
       "version_abreviada": "Sistemas",
+      "letra":"K",
       "nivel": {
         "1": [
           "SyPN",
@@ -3409,6 +3410,7 @@
     "civil": {
       "nombre_completo": "Ingeniería Civil",
       "version_abreviada": "Civil",
+      "letra": "O",
       "nivel": {
         "1": [
           "IC1",
@@ -3620,6 +3622,7 @@
     "electrica": {
       "nombre_completo": "Ingeniería en Energía Eléctrica",
       "version_abreviada": "Electrica",
+      "letra":"Q",
       "nivel": {
         "1": [
           "Int1",
@@ -3712,6 +3715,7 @@
     "electronica": {
       "nombre_completo": "Ingeniería Electrónica",
       "version_abreviada": "Electrónica",
+      "letra":"R",
       "nivel": {
         "1": [
           "Info1",
@@ -3845,6 +3849,7 @@
     "industrial": {
       "nombre_completo": "Ingeniería Industrial",
       "version_abreviada": "Industrial",
+      "letra":"I",
       "nivel": {
         "1": [
           "PS",
@@ -3979,6 +3984,7 @@
     "mecanica": {
       "nombre_completo": "Ingeniería Mecánica",
       "version_abreviada": "Mecánica",
+      "letra":"S",
       "nivel": {
         "1": [
           "IM1",
@@ -4132,6 +4138,7 @@
     "naval": {
       "nombre_completo": "Ingeniería Naval",
       "version_abreviada": "Naval",
+      "letra":"U",
       "nivel": {
         "1": [
           "IIN",
@@ -4226,6 +4233,7 @@
     "quimica": {
       "nombre_completo": "Ingeniería Química",
       "version_abreviada": "Quimica",
+      "letra":"V",
       "nivel": {
         "1": [
           "IIQ",
@@ -4352,6 +4360,7 @@
     "textil": {
       "nombre_completo": "Ingeniería Textil",
       "version_abreviada": "Textil",
+      "letra":"W",
       "nivel": {
         "1": [
           "IIT",
