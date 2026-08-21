@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom'
 import ProgressBar from '../../../shared/components/ProgressBar'
-import { currentProfile } from '../../../shared/profile'
+import { carreraActual, useProgreso } from '../../../shared/progreso'
+import { calcAvance } from '../../../shared/avance'
 import styles from './ProgressCard.module.css'
 
 function ProgressCard() {
-  const career = currentProfile.carrera?? "";
+  const progreso = useProgreso()
+  const { carrera } = carreraActual()
+  const { porcentaje } = calcAvance(carrera, progreso)
 
   return (
     <Link to="/avance" className={styles.card}>
       <div className={styles.row}>
-        <p className={styles.greeting}>{career}</p>
+        <p className={styles.greeting}>{carrera.version_abreviada}</p>
         <svg
           className={styles.chevron}
           width="18"
@@ -27,7 +30,7 @@ function ProgressCard() {
           />
         </svg>
       </div>
-      <ProgressBar value={currentProfile.avance ?? 0} />
+      <ProgressBar value={porcentaje} />
     </Link>
   )
 }

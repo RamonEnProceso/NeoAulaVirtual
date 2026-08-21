@@ -1,1 +1,1 @@
-export type TypeCareer = "Sistemas" | "Industrial" | "Quimica" | "Textil" | "Naval" | "Mecanica" | "Electrica" | "Civil" | "Electronica";
+export type TypeCareer = "sistemas" | "industrial" | "quimica" | "textil" | "naval" | "mecanica" | "electrica" | "civil" | "electronica";
