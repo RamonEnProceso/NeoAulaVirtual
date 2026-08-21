@@ -1,13 +1,19 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .titulo {
@@ -31,37 +37,45 @@
   color: var(--gray-badge);
 }
 
-.nivel {
+/* Card de cada nivel (vista lista) */
+.nivelCard {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 2px solid var(--gray-border);
+  border-radius: 19px;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.1s ease;
 }
 
-/* Nivel sin materias habilitadas → apagado en gris */
-.nivelGris {
+.nivelCard:active {
+  transform: scale(0.99);
+}
+
+.nivelCard:focus-visible {
+  outline: 2px solid var(--utn-red);
+  outline-offset: 2px;
+}
+
+/* Nivel sin materias habilitadas → apagado */
+.nivelCardGris {
   opacity: 0.55;
 }
 
-.nivelHeader {
+.nivelCardTop {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nivelHeaderBtn {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-align: left;
-  color: var(--text-primary);
-  font: inherit;
-}
-
 .nivelNombre {
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
@@ -71,6 +85,12 @@
   color: var(--gray-badge);
 }
 
+.chevron {
+  margin-left: 6px;
+  color: var(--gray-badge);
+}
+
+/* Grilla de materias */
 .grilla {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -179,6 +199,17 @@
 
 .modalCuerpo {
   margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.modalLista {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   font-size: 14px;
   line-height: 1.4;
   color: var(--text-primary);

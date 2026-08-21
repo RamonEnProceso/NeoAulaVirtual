@@ -13,6 +13,12 @@
   gap: 16px;
 }
 
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .titulo {
   padding: 5px 0;
   margin: 0;

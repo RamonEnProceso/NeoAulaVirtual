@@ -4,6 +4,12 @@
   gap: 20px;
 }
 
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .titulo {
   margin: 0;
   padding: 5px 0;

@@ -1,20 +1,26 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { comisiones, NOMBRE_DIA, ABREV_DIA } from '../../../shared/comisiones'
 import { deManana, diaHoy, diaManana } from '../../../shared/selectMaterias'
 import { manana, DIAS_TAB } from '../../../shared/utils/date'
 import type { DiaSemana } from '../../../shared/types/comision'
 import HoySection from '../../../shared/components/HoySection'
 import ListaComisiones from '../../../shared/components/ListaComisiones'
-import styles from './AgendaPage.module.css'
+import BackButton from '../../../shared/components/BackButton'
+import styles from './HorarioPage.module.css'
 
-function AgendaPage() {
+function HorarioPage() {
   const [seleccionado, setSeleccionado] = useState<DiaSemana>(diaHoy)
+  const navigate = useNavigate()
 
   const delSeleccionado = comisiones.filter((c) => c.dia === seleccionado)
 
   return (
     <main className={styles.page}>
-      <h1 className={styles.titulo}>Agenda</h1>
+      <div className={styles.headerTop}>
+        <h1 className={styles.titulo}>Horarios</h1>
+        <BackButton onClick={() => navigate(-1)} />
+      </div>
 
       <HoySection />
 
@@ -50,4 +56,4 @@ function AgendaPage() {
   )
 }
 
-export default AgendaPage
+export default HorarioPage

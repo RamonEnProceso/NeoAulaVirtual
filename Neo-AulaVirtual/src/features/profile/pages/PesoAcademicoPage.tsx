@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import ProfileHeader from '../components/ProfileHeader'
 import { currentProfile } from '../../../shared/profile'
 import { calcPesoAcademico, tonoPesoAcademico, estadoPesoAcademico, tonoValor } from '../logic/calcPesoAcademico'
 import type { ScoreTone, Tone } from '../logic/calcPesoAcademico'
+import BackButton from '../../../shared/components/BackButton'
 import styles from './PesoAcademicoPage.module.css'
 import PesoPolinomioCard from '../components/PesoPolinomio'
 
@@ -20,6 +22,7 @@ const TONO_BADGE: Record<Tone, string> = {
 
 function PesoAcademicoPage() {
   const { pesoAcademico } = currentProfile
+  const navigate = useNavigate()
   const score = calcPesoAcademico(currentProfile)
   const tono = tonoPesoAcademico(score)
   const estado = estadoPesoAcademico(score)
@@ -36,7 +39,10 @@ function PesoAcademicoPage() {
     <main className={styles.page}>
       <ProfileHeader />
       <div className={styles.body}>
-        <h1 className={styles.titulo}>Peso Académico</h1>
+        <div className={styles.headerTop}>
+          <h1 className={styles.titulo}>Peso Académico</h1>
+          <BackButton onClick={() => navigate(-1)} />
+        </div>
 
         {/* Score general */}
         <section className={`${styles.hero} ${TONO_HERO[tono]}`}>
