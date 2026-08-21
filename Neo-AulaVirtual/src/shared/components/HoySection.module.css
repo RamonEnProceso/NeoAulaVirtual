@@ -1,0 +1,21 @@
+.seccion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.seccionTitulo {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text-primary);
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.seccionFecha {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-badge);
+}

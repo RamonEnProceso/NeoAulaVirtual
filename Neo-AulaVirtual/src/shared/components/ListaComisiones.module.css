@@ -1,0 +1,37 @@
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.celda {
+  min-width: 0;
+}
+
+.scroll {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 6px;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollItem {
+  flex: 0 0 165px;
+}
+
+.vacio {
+  margin: 4px 0;
+  font-size: 14px;
+  color: var(--gray-badge);
+}

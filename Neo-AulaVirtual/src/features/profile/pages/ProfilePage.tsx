@@ -2,6 +2,7 @@ import ProfileHeader from '../components/ProfileHeader'
 import ProgressCard from '../components/ProgressCard'
 import styles from './ProfilePage.module.css'
 import PesoAcademicoCard from '../components/PesoAcademico'
+import AgendaCard from '../../../shared/components/AgendaCard'
 
 function ProfilePage() {
   return (
@@ -15,8 +16,8 @@ function ProfilePage() {
         <section className={styles.section}>
           <PesoAcademicoCard />
         </section>
-        <section>
-          
+        <section className={styles.section}>
+          <AgendaCard />
         </section>
       </div>
     </main>

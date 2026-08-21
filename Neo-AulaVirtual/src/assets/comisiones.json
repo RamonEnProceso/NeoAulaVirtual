@@ -1,0 +1,9 @@
+[
+    { "materia": "F1", "comision": "A1022", "dia": "martes", "hora": "08:30 a 12:30", "ubicacion": "Sede Campus" },
+    { "materia": "SyPN", "comision": "K1024", "dia": "viernes", "hora": "10:15 a 12:30", "ubicacion": "Sede Medrano" },
+    { "materia": "AdC", "comision": "K1024", "dia": "lunes", "hora": "07:45 a 11:00", "ubicacion": "Sede Campus" },
+    { "materia": "LyED", "comision": "K1024", "dia": "viernes", "hora": "07:45 a 10:00", "ubicacion": "Sede Medrano" },
+    { "materia": "AyED", "comision": "K1028", "dia": "sabado", "hora": "08:30 a 12:30", "ubicacion": "Sede Campus" },
+    { "materia": "IngSoc", "comision": "K1541", "dia": "lunes", "hora": "14:15 a 17:30", "ubicacion": "Sede Campus" },
+    { "materia": "IT1", "comision": "Z2573", "dia": "viernes", "hora": "19:00 a 22:15", "ubicacion": "Sede Campus" }
+]

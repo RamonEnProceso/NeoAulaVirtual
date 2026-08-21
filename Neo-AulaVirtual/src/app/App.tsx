@@ -8,6 +8,8 @@ import ProfilePage from '../features/profile/pages/ProfilePage'
 import AvancePage from '../features/avance/pages/AvancePage'
 import CareerPage from '../features/career/pages/CareerPage'
 import PesoAcademico from '../features/profile/pages/PesoAcademicoPage'
+import AgendaPage from '../features/agenda/pages/AgendaPage'
+import MateriaPage from '../features/subjects/pages/MateriaPage'
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/peso" element={<PesoAcademico/>} />
           <Route path="/avance" element={<AvancePage />} />
           <Route path="/carrera" element={<CareerPage />} />
+          <Route path="/agenda" element={<AgendaPage />} />
+          <Route path="/materia/:id" element={<MateriaPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
