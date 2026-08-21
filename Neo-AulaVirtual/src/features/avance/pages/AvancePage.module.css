@@ -94,10 +94,11 @@
 /* ── Cards de nivel (vista lista) ────────────────── */
 .grillaNiveles {
   display: flex;
+  padding-top: 15px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .nivelCard {
