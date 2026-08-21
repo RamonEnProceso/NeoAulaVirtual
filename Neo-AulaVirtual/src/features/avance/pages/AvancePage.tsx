@@ -8,9 +8,10 @@ import {
   accesoMateria,
   calcAvance,
   correlativasFaltantes,
+  estadoNivel,
   nivelesDe,
 } from '../../../shared/avance'
-import type { Acceso } from '../../../shared/avance'
+import type { Acceso, EstadoNivel } from '../../../shared/avance'
 import styles from './AvancePage.module.css'
 
 interface Aviso {
@@ -20,9 +21,16 @@ interface Aviso {
   lista?: string[]
 }
 
-const ORDINALES = ['1er', '2do', '3er', '4to', '5to', '6to', '7mo', '8vo', '9no', '10mo']
-function ordinalNivel(n: number): string {
-  return ORDINALES[n - 1] ?? `${n}º`
+const ROMANOS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
+function numeroRomano(n: number): string {
+  return ROMANOS[n - 1] ?? String(n)
+}
+
+const ESTADO_CLASE: Record<EstadoNivel, string> = {
+  completado: styles.nivelCompletado,
+  cursando: styles.nivelCursando,
+  habilitado: styles.nivelHabilitado,
+  noHabilitado: styles.nivelNoHabilitado,
 }
 
 function AvancePage() {
@@ -46,7 +54,7 @@ function AvancePage() {
 
   const abrirCartelNivel = (n: number) => {
     setAviso({
-      titulo: `${ordinalNivel(n)} Nivel`,
+      titulo: `Nivel ${numeroRomano(n)}`,
       cuerpo: 'No hay materias disponibles todavía.',
     })
   }
@@ -94,10 +102,10 @@ function AvancePage() {
       <main className={styles.page}>
         <header className={styles.header}>
           <div className={styles.headerTop}>
-            <h1 className={styles.titulo}>{ordinalNivel(nivel)} Nivel</h1>
+            <h1 className={styles.titulo}>Nivel {numeroRomano(nivel)}</h1>
             <BackButton onClick={volver} />
           </div>
-          <ProgressBar value={info?.porcentaje ?? 0} />
+          <ProgressBar value={info?.porcentaje ?? 0} tone={(info?.porcentaje ?? 0) >= 100 ? 'green' : 'amber'} />
           <p className={styles.total}>
             {info?.aprobadas ?? 0}/{info?.total ?? 0} materias aprobadas
           </p>
@@ -149,42 +157,46 @@ function AvancePage() {
 
   // ---------- Vista LISTA de niveles ----------
   return (
-    <main className={styles.page}>
-      <header className={styles.header}>
-        <div className={styles.headerTop}>
-          <h1 className={styles.titulo}>Avance</h1>
+    <main className={`${styles.page} ${styles.pageHero}`}>
+      <header className={styles.hero}>
+        <div className={styles.heroTop}>
+          <h1 className={styles.heroTitulo}>Tu Avance</h1>
           <BackButton onClick={volver} />
         </div>
-        <p className={styles.carrera}>{carrera.nombre_completo}</p>
-        <ProgressBar value={resumen.porcentaje} />
-        <p className={styles.total}>
+        <div className={styles.barra}>
+        <p className={styles.heroCarrera}>{carrera.nombre_completo}</p>
+        <ProgressBar value={resumen.porcentaje} tone={resumen.porcentaje >= 100 ? 'green' : 'amber'} />
+        <p className={styles.heroTotal}>
           {resumen.aprobadas} de {resumen.total} materias aprobadas
         </p>
+        </div>
       </header>
 
-      {nivelesDe(carrera).map((n) => {
-        const info = resumen.porNivel.find((r) => r.nivel === n)
-        const gris = (info?.habilitadas ?? 0) === 0
-        return (
-          <button
-            key={n}
-            type="button"
-            className={`${styles.nivelCard} ${gris ? styles.nivelCardGris : ''}`}
-            onClick={() => (gris ? abrirCartelNivel(n) : setNivel(n))}
-          >
-            <div className={styles.nivelCardTop}>
-              <span className={styles.nivelNombre}>{ordinalNivel(n)} Nivel</span>
-              <span className={styles.nivelContador}>
-                {info?.aprobadas ?? 0}/{info?.total ?? 0}
-                <span className={styles.chevron} aria-hidden="true">
-                  ›
-                </span>
-              </span>
-            </div>
-            <ProgressBar value={info?.porcentaje ?? 0} />
-          </button>
-        )
-      })}
+      <div className={styles.body}>
+        <div className={styles.grillaNiveles}>
+          {nivelesDe(carrera).map((n) => {
+            const info = resumen.porNivel.find((r) => r.nivel === n)
+            const estado = estadoNivel(n, carrera, progreso)
+            const puedeEntrar = (info?.habilitadas ?? 0) > 0
+            return (
+              <button
+                key={n}
+                type="button"
+                className={`${styles.nivelCard} ${ESTADO_CLASE[estado]} ${puedeEntrar ? '' : styles.nivelCardApagada}`}
+                onClick={() => (puedeEntrar ? setNivel(n) : abrirCartelNivel(n))}
+              >
+                <div className={styles.nivelCardTop}>
+                  <span className={styles.nivelRomano}>
+                    <span className={styles.nivelRomanoTexto}>Nivel</span>
+                    <span className={styles.nivelRomanoNumero}>{numeroRomano(n)}</span>
+                  </span>
+                </div>
+                <ProgressBar value={info?.porcentaje ?? 0} tone={estado === 'completado' ? 'green' : 'amber'} />
+              </button>
+            )
+          })}
+        </div>
+      </div>
 
       {modal}
     </main>

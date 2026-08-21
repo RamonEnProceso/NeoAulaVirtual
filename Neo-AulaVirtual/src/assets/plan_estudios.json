@@ -234,7 +234,7 @@
     },
     "SI": {
       "id": "SI",
-      "nombre": "Seminario Integrador *",
+      "nombre": "Seminario Integrador",
       "requisitos": {
         "regularizar": [
           "ASI"
@@ -3110,8 +3110,7 @@
           "AdC",
           "AGA",
           "F1",
-          "IngSoc",
-          "ASI"
+          "IngSoc"
         ],
         "2": [
           "ASI",

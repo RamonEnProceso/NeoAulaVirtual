@@ -44,6 +44,26 @@ export function accesoMateria(
   return 'bloqueada'
 }
 
+// Estado global de un NIVEL (para colorear su card en /avance):
+// - completado   = todas sus materias aprobadas (verde)
+// - cursando     = es el nivel actual (ámbar)
+// - habilitado   = tiene materias habilitadas, pero aún no es su turno (rosado)
+// - noHabilitado = sin materias habilitadas (gris, apagado)
+export type EstadoNivel = 'completado' | 'cursando' | 'habilitado' | 'noHabilitado'
+
+export function estadoNivel(
+  nivel: number,
+  carrera: Career,
+  progreso: ProgresoCarrera,
+): EstadoNivel {
+  const ids = carrera.nivel[String(nivel)]
+  if (ids.every((id) => progreso.materias[id]?.aprobada)) return 'completado'
+  const actual = nivelActual(carrera, progreso)
+  if (nivel === actual) return 'cursando'
+  const habilitadas = ids.filter((id) => accesoMateria(id, nivel, carrera, progreso) !== 'bloqueada').length
+  return habilitadas > 0 ? 'habilitado' : 'noHabilitado'
+}
+
 export interface ResumenNivel {
   nivel: number
   total: number

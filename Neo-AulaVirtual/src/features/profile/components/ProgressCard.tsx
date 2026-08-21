@@ -30,7 +30,7 @@ function ProgressCard() {
           />
         </svg>
       </div>
-      <ProgressBar value={porcentaje} />
+      <ProgressBar value={porcentaje} tone={porcentaje >= 100 ? 'green' : 'amber'} />
     </Link>
   )
 }

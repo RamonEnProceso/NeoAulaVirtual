@@ -4,6 +4,66 @@
   gap: 16px;
 }
 
+/* Header rojo full-bleed (como /perfil) */
+.pageHero {
+  margin: -16px -16px 0;
+}
+
+/* ── Header rojo (vista lista) ───────────────────── */
+.hero {
+  height: 188px;
+  background: var(--utn-red);
+  padding: 24px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--text-on-color);
+}
+
+.heroTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroTitulo {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: var(--rose-border);
+}
+
+.barra{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.heroCarrera {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+  opacity: 0.9;
+}
+
+.heroTotal {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.body {
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Header del detalle (vista de un nivel) ──────── */
 .header {
   display: flex;
   flex-direction: column;
@@ -24,12 +84,6 @@
   font-weight: 700;
 }
 
-.carrera {
-  margin: 0;
-  font-size: 13px;
-  color: var(--gray-badge);
-}
-
 .total {
   margin: 0;
   font-size: 13px;
@@ -37,24 +91,31 @@
   color: var(--gray-badge);
 }
 
-/* Card de cada nivel (vista lista) */
+/* ── Cards de nivel (vista lista) ────────────────── */
+.grillaNiveles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .nivelCard {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 14px 16px;
+  padding: 12px;
+  min-width: 15vw;
   background: var(--surface);
-  border: 2px solid var(--gray-border);
-  border-radius: 19px;
+  border: 2px solid var(--nivel-border, var(--gray-border));
+  border-radius: 16px;
   cursor: pointer;
-  text-align: left;
-  color: var(--text-primary);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.1s ease;
 }
 
 .nivelCard:active {
-  transform: scale(0.99);
+  transform: scale(0.98);
 }
 
 .nivelCard:focus-visible {
@@ -62,35 +123,88 @@
   outline-offset: 2px;
 }
 
-/* Nivel sin materias habilitadas → apagado */
-.nivelCardGris {
-  opacity: 0.55;
+/* Nivel sin materias habilitadas → apagado/más oscuro */
+.nivelCardApagada {
+  filter: brightness(0.9);
+  border: 2px solid var(--box-border, var(--gray-border))
 }
 
 .nivelCardTop {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
 }
 
-.nivelNombre {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--text-primary);
+.nivelRomano {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 1/1;
+  height: 38px;
+  padding: 40px;
+  border-radius: 8px;
+  background: var(--box-bg, var(--gray-card));
+  border: 2px solid var(--box-border, var(--gray-border));
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--box-text, var(--text-primary));
+}
+
+.nivelRomanoTexto{
+  font-size: 12px;
+}
+.nivelRomanoNumero{
+  font-size: 30px;
 }
 
 .nivelContador {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 13px;
   font-weight: 600;
   color: var(--gray-badge);
 }
 
 .chevron {
-  margin-left: 6px;
   color: var(--gray-badge);
 }
 
-/* Grilla de materias */
+/* Tonos por estado del nivel (variables) */
+.nivelCompletado {
+  --nivel-border: var(--green-border);
+  --box-bg: var(--green-card);
+  --box-border: var(--green-badge);
+  --box-text: var(--green-badge);
+}
+
+.nivelCursando {
+  --nivel-border: var(--amber-border);
+  --box-bg: var(--amber-card);
+  --box-border: var(--amber-border);
+  --box-text: var(--amber-badge);
+}
+
+.nivelHabilitado {
+  --nivel-border: var(--rose-border);
+  --box-bg: var(--rose-card);
+  --box-border: var(--rose-border);
+  --box-text: var(--utn-red);
+}
+
+.nivelNoHabilitado {
+  --nivel-border: var(--gray-border);
+  --box-bg: var(--gray-card);
+  --box-border: var(--gray-border);
+  --box-text: var(--gray-badge-border);
+}
+
+/* ── Grilla de materias (detalle) ────────────────── */
 .grilla {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -144,7 +258,7 @@
   color: var(--green-badge);
 }
 
-/* Tonos de acceso (convención en tokens.css) */
+/* Tonos de acceso de materia (convención en tokens.css) */
 .aprobada {
   background: var(--green-card);
   border-color: var(--green-border);
@@ -157,7 +271,7 @@
 
 .habilitada {
   background: var(--surface);
-  border-color: var(--amber-border);
+  border-color: var(--rose-border);
 }
 
 .bloqueada {
@@ -166,7 +280,7 @@
   color: var(--gray-badge);
 }
 
-/* Cartel modal */
+/* ── Cartel modal ────────────────────────────────── */
 .overlay {
   position: fixed;
   inset: 0;
