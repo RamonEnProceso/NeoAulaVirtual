@@ -11,4 +11,6 @@ export interface Comision {
   "hora": string
   /** sede, ej. "Sede Campus" */
   "ubicacion": string
+  /** año de inicio de cursada, ej. 2026 */
+  "inicio": number
 }
