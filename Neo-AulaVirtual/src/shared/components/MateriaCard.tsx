@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { materias } from '../plan'
-import { ABREV_DIA } from '../comisiones'
 import type { Comision } from '../types/comision'
 import styles from './MateriaCard.module.css'
 
@@ -16,10 +15,10 @@ function MateriaCard({ comision }: MateriaCardProps) {
   return (
     <Link to={`/materia/${materia.id}`} className={styles.card}>
       <div className={styles.cabecera}>
-        <span className={styles.comision}>{comision.comision}</span>
         <span className={styles.horario}>
          {comision.hora}
         </span>
+        <span className={styles.comision}>{comision.comision}</span>
       </div>
       <div className={styles.pie}>
         <span className={styles.nombre}>{materia.nombre}</span>

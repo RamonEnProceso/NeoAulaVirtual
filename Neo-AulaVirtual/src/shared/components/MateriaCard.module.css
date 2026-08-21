@@ -30,10 +30,11 @@
 }
 
 .comision {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 24px;
+  font-weight: 400;
   line-height: 1;
   letter-spacing: 0.5px;
+  color: var(--utn-red);
 }
 
 .horario {
@@ -59,4 +60,5 @@
 .ubicacion {
   font-size: 11px;
   color: var(--gray-badge);
+  display: none;
 }
