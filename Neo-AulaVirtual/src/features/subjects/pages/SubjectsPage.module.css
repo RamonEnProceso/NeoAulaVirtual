@@ -20,7 +20,6 @@
 
 .anio {
   margin: 0;
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--text-primary);
+  font-size: 23px;
+  color: var(--utn-red);
 }

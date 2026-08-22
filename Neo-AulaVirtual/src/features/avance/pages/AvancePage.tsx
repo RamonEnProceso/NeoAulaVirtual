@@ -99,55 +99,60 @@ function AvancePage() {
     const info = resumen.porNivel.find((r) => r.nivel === nivel)
 
     return (
-      <main className={styles.page}>
-        <header className={styles.header}>
-          <div className={styles.headerTop}>
-            <h1 className={styles.titulo}>Nivel {numeroRomano(nivel)}</h1>
+      <main className={`${styles.page} ${styles.pageHero}`}>
+        <header className={styles.hero}>
+          <div className={styles.heroTop}>
+            <h1 className={styles.heroTitulo}>Nivel {numeroRomano(nivel)}</h1>
             <BackButton onClick={volver} />
           </div>
-          <ProgressBar value={info?.porcentaje ?? 0} tone={(info?.porcentaje ?? 0) >= 100 ? 'green' : 'amber'} />
-          <p className={styles.total}>
-            {info?.aprobadas ?? 0}/{info?.total ?? 0} materias aprobadas
-          </p>
+          <div className={styles.barra}>
+            <p className={styles.heroCarrera}>{carrera.nombre_completo}</p>
+            <ProgressBar value={info?.porcentaje ?? 0} tone={(info?.porcentaje ?? 0) >= 100 ? 'green' : 'amber'} />
+            <p className={styles.heroTotal}>
+              {info?.aprobadas ?? 0}/{info?.total ?? 0} materias aprobadas
+            </p>
+          </div>
         </header>
 
-        <div className={styles.grilla}>
-          {ids.map((id) => {
-            const acceso: Acceso = accesoMateria(id, nivel, carrera, progreso)
-            const nombre = materias[id]?.nombre ?? id
-            const bloqueada = acceso === 'bloqueada'
-            const aprobada = progreso.materias[id]?.aprobada ?? false
+        <div className={styles.body}>
+          <div className={styles.grilla}>
+            {ids.map((id) => {
+              const acceso: Acceso = accesoMateria(id, nivel, carrera, progreso)
+              const nombre = materias[id]?.nombre ?? id
+              const bloqueada = acceso === 'bloqueada'
+              const aprobada = progreso.materias[id]?.aprobada ?? false
 
-            return (
-              <div key={id} className={`${styles.materia} ${styles[acceso]}`}>
-                {bloqueada ? (
-                  <button
-                    type="button"
-                    className={styles.materiaBoton}
-                    onClick={() => abrirCartelMateria(id)}
-                  >
-                    {nombre}
-                  </button>
-                ) : (
-                  <Link className={styles.materiaBoton} to={`/materia/${id}`}>
-                    {nombre}
-                  </Link>
-                )}
+              return (
+                <div key={id} className={`${styles.materia} ${styles[acceso]}`}>
+                  {bloqueada ? (
+                    <button
+                      type="button"
+                      className={styles.materiaBoton}
+                      onClick={() => abrirCartelMateria(id)}
+                    >
+                      {nombre}
+                    </button>
+                  ) : (
+                    <Link className={styles.materiaBoton} to={`/materia/${id}`}>
+                      {nombre}
+                    </Link>
+                  )}
 
-                {!bloqueada && (
-                  <button
-                    type="button"
-                    className={`${styles.check} ${aprobada ? styles.checkOn : ''}`}
-                    onClick={() => toggleAprobada(id)}
-                    aria-pressed={aprobada}
-                    title={aprobada ? 'Desmarcar aprobada' : 'Marcar aprobada'}
-                  >
-                    ✓
-                  </button>
-                )}
-              </div>
-            )
-          })}
+                  {!bloqueada && (
+                    <button
+                      type="button"
+                      className={`${styles.check} ${aprobada ? styles.checkOn : ''}`}
+                      onClick={() => toggleAprobada(id)}
+                      aria-pressed={aprobada}
+                      title={aprobada ? 'Desmarcar aprobada' : 'Marcar aprobada'}
+                    >
+                      ✓
+                    </button>
+                  )}
+                </div>
+              )
+            })}
+          </div>
         </div>
 
         {modal}

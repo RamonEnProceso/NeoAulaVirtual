@@ -14,5 +14,11 @@
   overflow-x: hidden;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
+  /* App mobile: scroll por tacto sin barra visible */
+  scrollbar-width: none;
   padding: 16px;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
 }

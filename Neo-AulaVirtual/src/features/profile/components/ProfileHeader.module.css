@@ -15,6 +15,16 @@
   color: var(--text-on-color);
 }
 
+.field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.field p {
+  margin: 0;
+}
+
 .name {
   font-family: sans-serif;
   font-size: 24px;

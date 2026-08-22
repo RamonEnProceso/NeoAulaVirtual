@@ -18,3 +18,17 @@
   color: var(--gray-badge);
   text-transform: capitalize;
 }
+
+.seccion {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.seccionTitulo {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text-primary);
+}

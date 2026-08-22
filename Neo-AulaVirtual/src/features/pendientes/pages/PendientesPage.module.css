@@ -1,0 +1,38 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header rojo full-bleed (como /perfil y /avance) */
+.pageHero {
+  margin: -16px -16px 0;
+}
+
+.hero {
+  height: 188px;
+  background: var(--utn-red);
+  padding: 24px 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.back{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.heroTitulo {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: var(--text-on-color);
+}
+
+.body {
+  padding: 0 16px 16px;
+}

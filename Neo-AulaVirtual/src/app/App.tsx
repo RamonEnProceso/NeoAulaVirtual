@@ -10,6 +10,7 @@ import CareerPage from '../features/career/pages/CareerPage'
 import PesoAcademico from '../features/profile/pages/PesoAcademicoPage'
 import HorarioPage from '../features/horario/pages/HorarioPage'
 import MateriaPage from '../features/subjects/pages/MateriaPage'
+import PendientesPage from '../features/pendientes/pages/PendientesPage'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/carrera" element={<CareerPage />} />
           <Route path="/horario" element={<HorarioPage />} />
           <Route path="/materia/:id" element={<MateriaPage />} />
+          <Route path="/pendientes" element={<PendientesPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -8,7 +8,7 @@
   margin: 0;
   font-size: 17px;
   font-weight: 800;
-  color: var(--text-primary);
+  color: var(--utn-red);
   display: flex;
   align-items: baseline;
   gap: 8px;

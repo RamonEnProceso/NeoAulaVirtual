@@ -1,0 +1,118 @@
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 14px 14px 16px;
+  border: 2px solid var(--pend-border);
+  border-radius: 20px;
+  background: var(--surface);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: transform 0.1s ease;
+}
+
+.card:active {
+  transform: scale(0.99);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--utn-red);
+  outline-offset: 2px;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.titulo {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.chip {
+  align-self: flex-start;
+  padding: 3px 12px;
+  border-radius: 10px;
+  background: var(--pend-badge);
+  color: var(--text-on-color);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 9px;
+  background: var(--pend-card);
+  border: 2px solid var(--pend-border);
+  flex-shrink: 0;
+}
+
+.numero {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--pend-badge);
+}
+
+.etiqueta {
+  margin-top: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--pend-badge);
+}
+
+.check {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--pend-badge);
+}
+
+.vacio {
+  margin: 4px 0;
+  font-size: 14px;
+  color: var(--gray-badge);
+}
+
+/* Tonos por estado (solo variables; los estilos base las consumen) */
+.urgente {
+  --pend-border: var(--rose-border);
+  --pend-badge: var(--utn-red-badge);
+  --pend-card: var(--rose-card);
+}
+
+.proximo {
+  --pend-border: var(--amber-border);
+  --pend-badge: var(--amber-badge);
+  --pend-card: var(--amber-card);
+}
+
+.entregado {
+  --pend-border: var(--green-border);
+  --pend-badge: var(--green-badge);
+  --pend-card: var(--green-card);
+}

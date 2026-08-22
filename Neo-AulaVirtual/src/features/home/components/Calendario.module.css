@@ -1,0 +1,112 @@
+.calendario {
+  background: var(--surface);
+  border: 1px solid var(--gray-border);
+  border-radius: var(--radius-card);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flecha {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.flecha:hover {
+  background: var(--gray-card);
+}
+
+.mesTitulo {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.filaDias,
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.diaNombre {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gray-badge);
+  padding: 4px 0;
+}
+
+.celdaVacia {
+  aspect-ratio: 1;
+}
+
+.dia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  position: relative;
+}
+
+.dia:hover {
+  background: var(--gray-card);
+}
+
+.diaNumero {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.punto {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.punto[data-entrega] {
+  background: var(--utn-red-badge);
+}
+
+.hoy {
+  box-shadow: inset 0 0 0 2px var(--utn-red);
+}
+
+.seleccionado {
+  background: var(--utn-red);
+}
+
+.seleccionado:hover {
+  background: var(--utn-red-dark);
+}
+
+.seleccionado .diaNumero {
+  color: var(--text-on-color);
+}
+
+.seleccionado .punto[data-entrega] {
+  background: var(--text-on-color);
+}

@@ -1,0 +1,130 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header rojo full-bleed (como /perfil y /avance) */
+.pageHero {
+  margin: -16px -16px 0;
+}
+
+.hero {
+  height: 188px;
+  background: var(--utn-red);
+  padding: 28px 21px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.heroTitulo {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: var(--text-on-color);
+}
+
+.body {
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.seccionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seccionTitulo {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--utn-red);
+}
+
+.verTodos {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: var(--utn-red);
+  flex-shrink: 0;
+}
+
+.verTodos:hover {
+  background: var(--rose-bg);
+}
+
+.detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detalleTitulo {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.vacio {
+  margin: 4px 0;
+  font-size: 14px;
+  color: var(--gray-badge);
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tarea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--gray-border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+
+.marcador {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--utn-red-badge);
+  flex-shrink: 0;
+}
+
+.tareaCuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tareaTitulo {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.tareaMateria {
+  font-size: 12px;
+  color: var(--gray-badge);
+}

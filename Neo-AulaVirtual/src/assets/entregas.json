@@ -1,0 +1,20 @@
+[
+  {
+    "id": "conaiisi-2026",
+    "titulo": "Entrega del CONAIISI",
+    "materia": null,
+    "fecha": "2026-08-28"
+  },
+  {
+    "id": "tp-punteros",
+    "titulo": "Entregar TP-Punteros",
+    "materia": "AyED",
+    "fecha": "2026-09-12"
+  },
+  {
+    "id": "tp-integrador",
+    "titulo": "TP Integrador de Algoritmos",
+    "materia": "AyED",
+    "fecha": "2026-09-30"
+  }
+]
