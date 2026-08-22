@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import UtnIcon from '../../../assets/icons/UTN.svg?react'
 import HoySection from '../../../shared/components/HoySection'
 import Calendario from '../components/Calendario'
 import Pendientes from '../../../shared/components/Pendientes'
@@ -23,7 +24,10 @@ function HomePage() {
   return (
     <main className={`${styles.page} ${styles.pageHero}`}>
       <header className={styles.hero}>
-        <h1 className={styles.heroTitulo}>Inicio</h1>
+        <div className={styles.heroTituloRow}>
+          <UtnIcon className={styles.heroLogo} aria-hidden="true" />
+          <h1 className={styles.heroTitulo}>Inicio</h1>
+        </div>
       </header>
 
       <div className={styles.body}>

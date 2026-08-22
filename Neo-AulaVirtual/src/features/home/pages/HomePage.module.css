@@ -14,7 +14,22 @@
   background: var(--utn-red);
   padding: 28px 21px;
   display: flex;
-  align-items: flex-end;
+  background-image: url("../../../../public/background/backgroundInicio.webp");
+  background-size: contain;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.heroTituloRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroLogo {
+  width: 26px;
+  height: auto;
+  color: var(--text-on-color);
 }
 
 .heroTitulo {
