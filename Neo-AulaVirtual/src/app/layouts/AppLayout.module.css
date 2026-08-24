@@ -4,7 +4,8 @@
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  background: var(--surface);
+  /* Degradé del SVG: blanco hasta la mitad, luego a #efefef */
+  background: linear-gradient(to bottom, var(--surface) 50%, var(--surface-fade) 100%);
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
 }
 

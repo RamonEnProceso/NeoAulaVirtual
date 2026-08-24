@@ -2,6 +2,8 @@
   position: relative;
   height: 188px;
   background: var(--utn-red);
+  background-image: url("../../../../public/background/backgroundInicio.webp");
+  background-size: contain;
   padding: 28px 21px;
 }
 

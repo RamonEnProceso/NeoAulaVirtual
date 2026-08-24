@@ -13,6 +13,8 @@
 .hero {
   height: 188px;
   background: var(--utn-red);
+  background-image: url("../../../../public/background/backgroundInicio.webp");
+  background-size: contain;
   padding: 24px 21px;
   display: flex;
   flex-direction: column;
