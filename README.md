@@ -11,7 +11,7 @@
 
 ## Estado del proyecto
 
-- ✅ **Paper entregado al CONAIISI 2026** (24/08/2026) — [ver PDF](./docs/Neo%20Aula%20Virtual%20-%20Paper.pdf)
+- ✅ **Paper entregado al CONAIISI 2026** (24/08/2026) — [ver PDF](./docs/pdfs/Neo%20Aula%20Virtual%20-%20Paper.pdf)
 - 🚀 **App en producción** — [neo-aula-virtual.web.app](https://neo-aula-virtual.web.app)
 - 📱 **APK para Android** — (No compartida para el público)
 - 📊 **Encuesta a estudiantes (n=26)**: el 88% usaría la aplicación — [resultados](./docs/05-encuesta.md)
@@ -81,7 +81,7 @@ El Aula Virtual y el SIU-GUARANÍ resuelven la gestión académica de la cursada
 Ver el [índice](./docs/00-indice.md) de la documentación: problema, propuesta, roadmap, decisiones técnicas y resultados de la encuesta.
 
 - [Problema](./docs/01-problema.md) · [Propuesta](./docs/02-propuesta.md) · [Roadmap](./docs/03-roadmap.md) · [Decisiones](./docs/04-decisiones.md) · [Encuesta](./docs/05-encuesta.md)
-- 📄 [Paper CONAIISI 2026 (PDF)](./docs/Neo%20Aula%20Virtual%20-%20Paper.pdf)
+- 📄 [Paper CONAIISI 2026 (PDF)](./docs/pdfs/Neo%20Aula%20Virtual%20-%20Paper.pdf)
 
 ## Estructura del repositorio
 
