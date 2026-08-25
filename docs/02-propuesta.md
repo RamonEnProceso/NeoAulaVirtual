@@ -31,7 +31,7 @@
 - Validación de cada funcionalidad con **casos de prueba sobre datos reales del plan**, verificando escenarios de correlatividad.
 
 <div align="center">
-  <img src="./assets/screenshots/seguidorDeCarrera.webp" width="600" alt="Seguidor de carrera Tu Avance"/><br>
+  <img src="./assets/screenshots/seguidorDeCarrera.webp" width="900" alt="Seguidor de carrera Tu Avance"/><br>
 </div>
 
 ## Líneas futuras
