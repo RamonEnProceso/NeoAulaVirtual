@@ -16,4 +16,4 @@ Documentación del proyecto **Neo Aula Virtual** (CONAIISI 2026).
 ## Documentos (PDFs)
 
 - 📄 [Paper CONAIISI 2026 (PDF)](./pdfs/Neo%20Aula%20Virtual%20-%20Paper.pdf) — versión de entrega, evaluación ciega (24/08/2026)
-- 📄 [Proyecto Aula Virtual - CONAIISI 2026 (PDF)](./pdfs/Proyecto%20Aula%20Virtual%20-%20CONAIISI%202026.pdf) — documento de ideas inicial, la semilla del proyecto
+- 📄 [Proyecto Aula Virtual (PDF)](./pdfs/Proyecto%20Aula%20Virtual%20-%20Inicio.pdf) — documento de ideas inicial, la semilla del proyecto
