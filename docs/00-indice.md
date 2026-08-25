@@ -13,6 +13,7 @@ Documentación del proyecto **Neo Aula Virtual** (CONAIISI 2026).
 | [Encuesta](./05-encuesta.md) | Resultados de la encuesta a estudiantes (n=26) |
 | [Ideas sueltas](./ideas.md) | Backlog informal de features — no refleja el estado actual |
 
-## Entregas
+## Documentos (PDFs)
 
-- 📄 [Paper CONAIISI 2026 (PDF)](./Neo%20Aula%20Virtual%20-%20Paper.pdf) — versión de entrega (24/08/2026)
+- 📄 [Paper CONAIISI 2026 (PDF)](./pdfs/Neo%20Aula%20Virtual%20-%20Paper.pdf) — versión de entrega, evaluación ciega (24/08/2026)
+- 📄 [Proyecto Aula Virtual - CONAIISI 2026 (PDF)](./pdfs/Proyecto%20Aula%20Virtual%20-%20CONAIISI%202026.pdf) — documento de ideas inicial, la semilla del proyecto
