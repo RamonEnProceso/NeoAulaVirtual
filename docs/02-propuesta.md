@@ -1,50 +1,44 @@
 # Propuesta
 
-## Núcleo — Rediseño de interfaz
-Reconstrucción mobile-first de la plataforma, priorizando la experiencia del estudiante sobre la administración institucional.
+> ¿Qué construye el proyecto?
+>Separación entre lo **implementado** y lo **futuro** (alineada al paper).
 
-- **Interfaz responsive** adaptada a móvil y escritorio.
-- **Modo oscuro**.
-- **Legajo visible** en el perfil del alumno.
-- Apartado de **tareas próximas** visible por defecto, ordenado por fecha de entrega.
-- **Indicador de semana actual** dentro del año académico.
-  Ej: "Semana 23 de 52 — faltan 3 semanas para el parcial"
+## Núcleo implementado
 
-## Progreso académico
-Features orientadas a que el estudiante tenga conciencia
-real de su situación en la carrera y en cada materia.
+### Modelado del plan de estudios
+- Plan de estudios modelado en un JSON estructurado (`Neo-AulaVirtual/src/assets/plan_estudios.json`), con la totalidad de las materias y sus requisitos de regularización y aprobación como listas independientes.
+- **Lógica de correlatividades por materia**: ante un cambio de especialidad, las materias aprobadas se mantienen.
+- Las comisiones (día, horario, ubicación), las entregas (fecha) y el perfil del estudiante se modelan como conjuntos independientes de datos.
 
-- **Agenda personal por materia** — cada materia permite cargar horarios propios para que la interfaz se adapte al día del estudiante.
-- **Seguidor de carrera** — vista del progreso e hitos académicos acumulados a lo largo de la carrera.
-  - Cuánto falta cursar
-  - Correlativas
-  - Estado por materia (aprobada / firmada / sin aprobar)
-  - Calificaciones, días de clase y aula
-- **Burndown chart adaptado** — herramienta inspirada en SCRUM que muestra qué tan al día está el alumno con las entregas de cada materia. Los datos se calculan a partir del tiempo promedio de respuesta desde que se anuncia cada tarea, o se cargan manualmente por el profesor.
-- **OKR académico** — sistema para que el alumno defina objetivos medibles alineados a su carrera y haga seguimiento de su progreso.
+### Seguimiento visual del avance
+- **"Tu Avance"** — seguidor de carrera que muestra la progresión por niveles y la habilitación de materias según el estado real del alumno.
+- **Verificación interactiva de correlatividades**: qué materias puede cursar según su estado (Aprobado / Cursando / Regularizado).
+- **Peso académico** calculado conforme al reglamento vigente.
 
-## Gamificación
-Mecanismos de reconocimiento y motivación distribuidos en la interfaz.
+### Vida académica integrada
+- **Pantalla de inicio** — horarios del día, pendientes con niveles de urgencia (semáforo de colores + contadores de días restantes) y calendario mensual con las fechas de entrega.
+- **Perfil** — consolida el legajo y el peso académico.
+- **Detalle de materia** — estado, correlativas requeridas y habilitadas. El contenido de cursada (apuntes, entregas, comunicados) continúa gestionándose desde el Aula Virtual institucional.
+- **Notificaciones** de entregas próximas.
 
-- **Feeling visual** — microinteracciones contextuales: confeti al aprobar un TP, contador regresivo en rojo cuando una entrega está próxima a vencer.
-- **Sistema de logros** — hitos visibles en el perfil del alumno que reconocen participación académica y extracurricular.
-  Ej: Mejor promedio en Física I (2026), Ganador del
-  Torneo de Fútbol (2023), Mejor compañero en foros (2024)
+### Persistencia y despliegue
+- Progreso del alumno persistido localmente con **localStorage** (aplicación personal de usuario único, sin backend).
+- **Firebase Hosting** — producción en https://neo-aula-virtual.web.app
+- Validación de cada funcionalidad con **casos de prueba sobre datos reales del plan**, verificando escenarios de correlatividad.
 
-## Mapa Interactivo
-Mapa 3D para encontrar las aulas en la facultad.
+<div align="center">
+  <img src="./assets/screenshots/seguidorDeCarrera.webp" width="260" alt="Seguidor de carrera Tu Avance"/><br>
+  <img src="./assets/screenshots/pesoAcademico.webp" width="260" alt="Peso académico y pendientes"/>
+</div>
 
+## Líneas futuras
 
-## IA — Trabajo futuro
-Asistente cognitivo integrado al aula, entrenado con material de cada cátedra. A diferencia de herramientas como NotebookLM, el asistente fomentaría la lectura del material original en lugar de reemplazarla.
-- Límite de interacciones diarias (2-3 cada 24hs),
-  ampliable mediante puntos obtenidos en actividades
-  académicas.
-- Requiere backend con FastAPI + Ollama.
+> Definidas en el paper como trabajo futuro.
 
-## Herramientas complementarias
-
-Utilidades de estudio integradas a la plataforma. **Alcance secundario**: no atacan las fricciones identificadas del Aula Virtual, por lo que se implementan solo si el núcleo y el progreso académico están completos.
-
-- **Pomodoro** — temporizador de sesiones de estudio que refuerza la conciencia del tiempo que plantea el indicador de semana actual.
-- **Conversor de bases numéricas** — apoyo para materias de base (Algoritmos, Arquitectura de Computadoras): conversión entre binario, octal, decimal y hexadecimal sin salir de la plataforma.
+- **Sincronización en la nube** — arquitectura orientada a microservicios: respaldo y sincronización entre dispositivos, e integración con los sistemas institucionales para actualizar comisiones, calificaciones y legajo.
+- **Generalización a otras sedes** — el modelado es aplicable a cualquier facultad regional; extenderlo al ecosistema de la UTN a nivel país.
+- **Contenido de cursada integrado** — absorbido dentro de la interfaz de forma más orgánica que el Aula Virtual actual, sin perder la simplicidad mobile-first.
+- **Mapa interactivo de aulas** — orientación al ingresante usando la ubicación de cada comisión.
+- **Herramientas de productividad** — temporizador de estudio (Pomodoro), conversor de bases numéricas.
+- **Sistema de logros y gamificación** — confeti al aprobar, hitos visibles en el perfil.
+- **Asistente con IA** — recupera información de la normativa institucional y señala fuentes, fomentando la lectura del material original (backend FastAPI + Ollama).

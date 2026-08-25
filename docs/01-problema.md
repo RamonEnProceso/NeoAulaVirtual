@@ -1,11 +1,52 @@
 # Problema
 
-> Sintesis de la fricción con el Aula Virtual
+> ¿Por qué existe Neo Aula Virtual?
 
 ## Contexto
-Los estudiantes de la UTN acceden al Aula Virtual mayoritariamente desde dispositivos móviles, en situaciones de uso real como el transcurso de una clase. La plataforma fue diseñada con criterio desktop-first y no contempla este escenario.
 
-## Fricciones identificadas
+La UTN resuelve la gestión académica de la cursada con dos sistemas consolidados: el **SIU-GUARANÍ** (legajo, calificaciones, inscripciones, plan de estudios) y el **Aula Virtual** (materiales y actividades de las cátedras). Ambos cumplen su función administrativa, pero la información del estudiante vive **fragmentada**:
+
+- La agenda y el legajo se consultan en el SIU-GUARANÍ.
+- Los materiales y las actividades, en el Aula Virtual.
+- El plan de estudios no se integra con la agenda, los horarios ni el progreso real del estudiante.
+- Ninguno de los dos ofrece un seguimiento visual del avance de la carrera.
+
+El estudiante reconstruye **manualmente** un panorama que ningún sistema le da unificado, y no existe un entorno móvil que integre esa información.
+
+## Evidencia empírica (encuesta n=26)
+
+Los datos de la [encuesta](./05-encuesta.md) a estudiantes de 1° a 5° año cuantifican el problema:
+
+| Dato | Resultado |
+|---|---|
+| Consulta su situación académica en más de un sistema | **59%** |
+| Perdió al menos una entrega, fecha o aula por la info repartida | **62%** |
+| No sabe con seguridad qué materias puede cursar según su estado | **58%** |
+| No tiene una visión clara del avance de su carrera | **50%** |
+| Consulta desde escritorio / teléfono / notebook | 42% / 38% / 15% |
+| Considera incómodo usar AV y SIU-GUARANÍ desde el celular | **54%** |
+| Usaría una app que unifique plan, horarios, comisiones y entregas | **88%** |
+
+
+```mermaid
+pie title ¿Qué sistemas usás para conocer tu situación académica?
+    "Ambos" : 16
+    "SIU-GUARANÍ" : 8
+    "Drive" : 1
+    "Aula Virtual" : 1
+```
+
+```mermaid
+pie title ¿Con qué dispositivo consultás más seguido la información de la facu?
+    "PC de escritorio" : 11
+    "Celular" : 10
+    "Notebook" : 4
+    "Tablet" : 1
+```
+
+## Fricciones del Aula Virtual (contexto)
+
+Más allá de la fragmentación, el uso cotidiano del Aula Virtual desde el celular presenta fricciones propias que motivaron el enfoque mobile-first del proyecto:
 
 ### Autenticación
 - La sesión expira rápido, obligando a iniciar sesión desde cero en cada uso.
@@ -14,7 +55,7 @@ Los estudiantes de la UTN acceden al Aula Virtual mayoritariamente desde disposi
 ### Página principal
 - Interfaz visualmente sobrecargada con elementos innecesarios.
 - Imágenes no responsive que desbordan el viewport móvil.
-- Sin filtro ni priorización: todas las materias aparecen igual, sin considerar cuáles están activas hoy.
+- Sin priorización: todas las materias aparecen igual, sin considerar cuáles están activas hoy.
 
 ### Navegación dentro de la materia
 - El menú lateral está oculto detrás de un botón poco visible, del mismo color que el fondo, fuera de la barra de navegación principal.
@@ -25,49 +66,19 @@ Los estudiantes de la UTN acceden al Aula Virtual mayoritariamente desde disposi
 - Los nombres de los PDFs, a veces, no son descriptivos.
 - El estudiante debe descargar cada archivo individualmente para identificar cuál es el relevante.
 
-## Capturas
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="./assets/screenshots/01.webp" alt="Captura - Inicio"/>
-      <br/>Captura -
-      <br/>"Inicio"
-    </td>
-    <td align="center">
-      <img src="./assets/screenshots/02.webp" alt="Captura - Área de materia"/>
-      <br/>Captura -
-      <br/>"Área de materia"
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="./assets/screenshots/03.webp" alt="Captura - Menú Lateral"/>
-      <br/>Captura -
-      <br/>"Menú Lateral"
-    </td>
-    <td align="center">
-      <img src="./assets/screenshots/04.webp" alt="Captura - Sección Material"/>
-      <br/>Captura -
-      <br/>"Sección Material"
-    </td>
-  </tr>
-</table>
-
 ## Ausencias identificadas
+
 - No existe seguimiento visual del progreso en la carrera.
-- No hay integración entre el Aula Virtual y el SIU-Guaraní
-  (legajo, horarios, agenda académica).
+- No hay integración entre el Aula Virtual y el SIU-GUARANÍ (legajo, horarios, agenda académica).
 - La plataforma no tiene sistema de reconocimiento ni logros para el estudiante.
 
-## Evidencia Empírica
+## Soluciones externas existentes
 
-- Estudiantes desarrollaron soluciones externas no oficiales para suplir estas ausencias:
-  - Extensiones de navegador para seguimiento de materias: https://github.com/pablomatiasgomez/utn.ba-helper
-  - Visualizador independiente: https://visualizador-materias.web.app/
-  - Portal de FMT: https://ceitfmt.ar/login
-  - Portal de iTEC: (Actualmente en desarrollo)
+La demanda de una herramienta complementaria se evidencia en soluciones no oficiales desarrolladas por los propios estudiantes:
 
-- Docentes de la carrera desarrollaron plataformas propias ante las limitaciones del Aula Virtual oficial.
-  Ej: https://www.pdep.com.ar — sitio independiente creado por cátedras de UTN
-  Además migró la comunicación con alumnos a Discord
+- Extensiones de navegador para seguimiento de materias: https://github.com/pablomatiasgomez/utn.ba-helper
+- Visualizador independiente: https://visualizador-materias.web.app/
+- Portal de FMT: https://ceitfmt.ar/login
+- Portal de iTEC: (actualmente en desarrollo)
+
+También hay docentes que desarrollaron plataformas propias ante las limitaciones del Aula Virtual oficial. Ej: https://www.pdep.com.ar — sitio independiente creado por cátedras de UTN, que además migró la comunicación con alumnos a Discord.
