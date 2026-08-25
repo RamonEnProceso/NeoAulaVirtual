@@ -15,6 +15,10 @@
 - **Verificación interactiva de correlatividades**: qué materias puede cursar según su estado (Aprobado / Cursando / Regularizado).
 - **Peso académico** calculado conforme al reglamento vigente.
 
+<div align="center">
+  <img src="./assets/screenshots/pesoAcademico.webp" width="400" alt="Peso académico y pendientes"/>
+</div>
+
 ### Vida académica integrada
 - **Pantalla de inicio** — horarios del día, pendientes con niveles de urgencia (semáforo de colores + contadores de días restantes) y calendario mensual con las fechas de entrega.
 - **Perfil** — consolida el legajo y el peso académico.
@@ -27,8 +31,7 @@
 - Validación de cada funcionalidad con **casos de prueba sobre datos reales del plan**, verificando escenarios de correlatividad.
 
 <div align="center">
-  <img src="./assets/screenshots/seguidorDeCarrera.webp" width="260" alt="Seguidor de carrera Tu Avance"/><br>
-  <img src="./assets/screenshots/pesoAcademico.webp" width="260" alt="Peso académico y pendientes"/>
+  <img src="./assets/screenshots/seguidorDeCarrera.webp" width="600" alt="Seguidor de carrera Tu Avance"/><br>
 </div>
 
 ## Líneas futuras
