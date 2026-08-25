@@ -16,7 +16,9 @@
 - 📱 **APK para Android** — (No compartida para el público)
 - 📊 **Encuesta a estudiantes (n=26)**: el 88% usaría la aplicación — [resultados](./docs/05-encuesta.md)
 
-<img src="./docs/assets/screenshots/inicio.webp" width="300" alt="Captura - Pantalla de inicio" align="center"/>
+<div align="center">
+<img src="./docs/assets/screenshots/inicio.webp" width="600" alt="Captura - Pantalla de inicio" align="center"/>
+</div>
 
 ## Objetivo
 
